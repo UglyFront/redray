@@ -14,7 +14,7 @@ defineProps({
 <style scoped>
 .tag {
   font-size: 0.7rem;
-  background: #111215;
+  background: var(--border-dim);
   padding: 4px 12px;
   border-radius: var(--border-radius-xl);
   color: var(--text-secondary);

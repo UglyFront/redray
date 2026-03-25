@@ -45,7 +45,7 @@ defineProps({
 <style scoped>
 .shipping-block {
   margin: 3rem 0 2rem;
-  background: #070708;
+  background: var(--card-bg);
   border-radius: var(--border-radius-md);
   border: 1px solid var(--border-dim);
   padding: 1.5rem 1rem;
@@ -74,7 +74,7 @@ defineProps({
 
 .shipping-block__coefficient {
   font-size: 0.7rem;
-  background: #111;
+  background: var(--bg);
   padding: 4px 12px;
   border-radius: var(--border-radius-xl);
   color: var(--text-muted);
@@ -82,7 +82,7 @@ defineProps({
 
 .shipping-block__info {
   margin-top: 1.5rem;
-  background: #0c0c0e;
+  background: rgba(0, 0, 0, 0.03);
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius-sm);
   font-size: 0.75rem;
@@ -90,6 +90,10 @@ defineProps({
   border-left: 3px solid var(--red);
   line-height: 1.6;
 }
+
+/* [data-theme="dark"] .shipping-block__info {
+  background: #0c0c0e;
+} */
 
 .shipping-block__info i {
   color: var(--red);

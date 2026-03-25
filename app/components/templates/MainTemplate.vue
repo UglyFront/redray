@@ -5,7 +5,10 @@
         <h1>REDRAY<span>LOGISTICS</span></h1>
         <p>{{ tagline }}</p>
       </div>
-      <HeaderLinks :links="headerLinks" />
+      <div class="header-right">
+        <HeaderLinks :links="headerLinks" />
+        <ThemeToggle />
+      </div>
     </header>
     
     <RedLine />
@@ -37,6 +40,7 @@
 <script setup>
 import HeaderLinks from '@/components/molecules/HeaderLinks.vue'
 import RedLine from '@/components/atoms/RedLine.vue'
+import ThemeToggle from '@/components/atoms/ThemeToggle.vue'
 
 defineProps({
   headerLinks: {
@@ -64,7 +68,7 @@ const currentYear = new Date().getFullYear()
 .main-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem 1.8rem;
+  padding: 8rem 2rem 1.8rem;
 }
 
 .main-header {
@@ -75,14 +79,26 @@ const currentYear = new Date().getFullYear()
   gap: 1.5rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--border-dim);
-  padding-bottom: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 3rem;
+  z-index: 99999;
+  background: var(--dark-bg);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .logo h1 {
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, var(--text-primary), #e0e0e0);
+  background: linear-gradient(135deg, var(--text-primary), var(--text-muted));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -145,6 +161,14 @@ const currentYear = new Date().getFullYear()
   .main-header {
     flex-direction: column;
     align-items: flex-start;
+    position: static;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+  
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
   }
   
   .main-footer {

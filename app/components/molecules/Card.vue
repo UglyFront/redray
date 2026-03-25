@@ -64,7 +64,7 @@ defineProps({
   background: var(--card-bg);
   border: 1px solid var(--border-dim);
   border-radius: var(--border-radius-md);
-  transition: var(--transition-base);
+  transition: transform var(--transition-base);
   backdrop-filter: blur(2px);
   overflow: hidden;
 }

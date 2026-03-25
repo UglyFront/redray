@@ -55,7 +55,7 @@ defineProps({
 .shipping-table th {
   text-align: center;
   padding: 12px 6px;
-  background: #0f0f12;
+  background: var(--bg);
   color: var(--red);
   font-weight: 700;
   border-bottom: 1px solid rgba(225, 29, 72, 0.3);

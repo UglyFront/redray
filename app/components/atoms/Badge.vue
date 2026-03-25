@@ -24,7 +24,7 @@ defineProps({
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  transition: var(--transition-fast);
+  transition: transform var(--transition-fast);
 }
 
 .badge--default {

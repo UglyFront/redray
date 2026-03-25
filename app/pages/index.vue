@@ -15,7 +15,7 @@
     />
     
     <ShippingBlock
-      title="СТАВКИ ЗА КГ · АГРЕССИВ"
+      title="СТАВКИ ЗА КГ"
       coefficientText="объемный вес /7000"
       :tableData="shippingData"
       :weightColumns="weightColumns"
