@@ -14,16 +14,8 @@
       :suppliers="brandSuppliers"
     />
     
-    <ShippingBlock
-      title="СТАВКИ ЗА КГ"
-      coefficientText="объемный вес /7000"
-      :tableData="shippingData"
-      :weightColumns="weightColumns"
-      :infoHtml="shippingInfo"
-      footnoteLeft="объемный вес /7000"
-      footnoteRight="менеджер: @RRL_manager"
-    />
-
+    <ShippingBlock />
+    
     <CISShippingBlock />
     
     <!-- <FeaturesSection :features="features" /> -->
@@ -34,62 +26,102 @@
 import MainTemplate from '@/components/templates/MainTemplate.vue'
 import SuppliersGrid from '@/components/organisms/SuppliersGrid.vue'
 import ShippingBlock from '@/components/organisms/ShippingBlock.vue'
-// import FeaturesSection from '@/components/organisms/FeaturesSection.vue'
 import CISShippingBlock from '@/components/organisms/CISShippingBlock.vue'
+// import FeaturesSection from '@/components/organisms/FeaturesSection.vue'
 
-// Данные для шапки
 const headerLinks = [
   { label: 'TELEGRAM', href: 'https://t.me/RedRayLogistics', icon: 'fab fa-telegram' },
   { label: 'TIKTOK', href: 'https://www.tiktok.com/@red_raylogistics', icon: 'fab fa-tiktok' },
   { label: 'МЕНЕДЖЕР', href: 'https://t.me/RRL_manager', icon: 'fas fa-user-headset' },
   { label: 'БОТ', href: 'https://t.me/rule_and_blanksbot', icon: 'fas fa-robot' },
-  // { label: 'ЗАКАЗ', href: 'https://t.me/RedRayLogistics/259', icon: 'fas fa-question-circle' }
+  { label: 'ЗАКАЗ', href: 'https://t.me/RedRayLogistics/259', icon: 'fas fa-question-circle' }
 ]
 
-// Данные для подвала
 const footerLinks = [
   { label: 'channel', href: 'https://t.me/RedRayLogistics', icon: 'fab fa-telegram' },
   { label: 'manager', href: 'https://t.me/RRL_manager', icon: 'fas fa-user-tie' },
   { label: 'bot', href: 'https://t.me/rule_and_blanksbot', icon: 'fas fa-bolt' }
 ]
 
-// Поставщики обуви
 const shoeSuppliers = [
   {
     title: 'UMKAO',
     badgeText: 'SNEAKER FACTORY',
     description: 'Крупнейший поставщик кроссовок и повседневной обуви. Каталог xyupoo, стабильный поток, низкие цены.',
-    storeLink: 'https://umkao.xyupoo.com',
-    storeLabel: 'umkao.xyupoo.com',
+    storeLink: 'https://umkao.x.yupoo.com',
+    storeLabel: 'umkao.x.yupoo.com',
+    storeIcon: 'fas fa-store',
     tags: [
-      { name: 'Nike', strong: '' },
-      { name: 'Adidas', strong: '' },
-      { name: 'New Balance', strong: '' },
-      { name: 'Asics', strong: '' }
+      { name: 'Nike', strong: 'Nike' },
+      { name: 'Adidas', strong: 'Adidas' },
+      { name: 'New Balance', strong: 'New Balance' },
+      { name: 'Asics', strong: 'Asics' },
+      { name: 'Yeezy', strong: 'Yeezy' }
     ],
     primaryLink: 'https://t.me/RRL_manager',
-    primaryText: 'Поставщик',
+    primaryText: 'Выкупить',
     primaryIcon: 'fab fa-telegram',
-    secondaryLink: '',
+    secondaryLink: 'https://umkao.x.yupoo.com',
     secondaryText: 'Каталог',
     secondaryIcon: 'fas fa-external-link-alt'
   },
   {
-    title: 'WEIDIAN BASE',
-    badgeText: 'DIRECT',
-    description: 'Магазин на Weidian, огромный выбор кроссовок, быстрая обработка. Dunk, Jordan, Yeezy.',
-    storeLink: 'https://weidian.com/?userid=1621765644&spider_token=4985',
-    storeLabel: 'weidian.com/userid=1621765644',
+    title: 'XIENIAN',
+    badgeText: 'SNEAKER MARKET',
+    description: 'Популярный поставщик с огромным ассортиментом. Регулярные обновления каталога.',
+    storeLink: 'https://x.yupoo.com/photos/xienian/albums',
+    storeLabel: 'xienian albums',
+    storeIcon: 'fas fa-store',
     tags: [
-      { name: 'Dunk', strong: '' },
-      { name: 'Jordan', strong: '' },
-      { name: 'Yeezy', strong: '' },
-      { name: 'Travis Scott', strong: '' }
+      { name: 'Nike', strong: 'Nike' },
+      { name: 'Jordan', strong: 'Jordan' },
+      { name: 'New Balance', strong: 'New Balance' },
+      { name: 'Adidas', strong: 'Adidas' }
     ],
     primaryLink: 'https://t.me/RRL_manager',
-    primaryText: 'Поставщик',
+    primaryText: 'Выкупить',
     primaryIcon: 'fab fa-telegram',
-    secondaryLink: '',
+    secondaryLink: 'https://x.yupoo.com/photos/xienian/albums',
+    secondaryText: 'Каталог',
+    secondaryIcon: 'fas fa-external-link-alt'
+  },
+  {
+    title: 'WEIDIAN STYLE',
+    badgeText: 'DIRECT SALE',
+    description: 'Weidian магазин с широким ассортиментом обуви. Быстрая обработка заказов.',
+    storeLink: 'https://h5.weidian.com/decorationshop-category/category.html?c=148133437&userid=1624885820&wfbr=BuyercopyURL&share_relation=4c3947d4c0c9c014_18spider_token=fefb',
+    storeLabel: 'weidian.com',
+    storeIcon: 'fas fa-link',
+    tags: [
+      { name: 'Dunk', strong: 'Dunk' },
+      { name: 'Jordan', strong: 'Jordan' },
+      { name: 'Yeezy', strong: 'Yeezy' },
+      { name: 'Travis Scott', strong: 'Travis Scott' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Заказать',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://h5.weidian.com/decorationshop-category/category.html?c=148133437&userid=1624885820&wfbr=BuyercopyURL&share_relation=4c3947d4c0c9c014_18spider_token=fefb',
+    secondaryText: 'Смотреть',
+    secondaryIcon: 'fas fa-search'
+  },
+  {
+    title: 'WEIDIAN BASE',
+    badgeText: 'BUDGET',
+    description: 'Доступные цены, большой выбор кроссовок для любых брендов.',
+    storeLink: 'https://weidian.com/?userid=1621765644&spider_token=4985',
+    storeLabel: 'weidian.com/userid=1621765644',
+    storeIcon: 'fas fa-link',
+    tags: [
+      { name: 'Nike', strong: 'Nike' },
+      { name: 'Adidas', strong: 'Adidas' },
+      { name: 'New Balance', strong: 'New Balance' },
+      { name: 'Asics', strong: 'Asics' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Заказать',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://weidian.com/?userid=1621765644&spider_token=4985',
     secondaryText: 'Смотреть',
     secondaryIcon: 'fas fa-search'
   },
@@ -99,76 +131,327 @@ const shoeSuppliers = [
     description: 'Редкие релизы, коллаборации, эксклюзив. Weidian премиум-сегмент.',
     storeLink: 'https://shop1697744208.v.weidian.com/?userid=1697744208&spider_token=3818',
     storeLabel: 'shop1697744208.v.weidian.com',
+    storeIcon: 'fas fa-crown',
     tags: [
-      { name: 'LV Trainer', strong: '' },
-      { name: 'Balenciaga', strong: '' },
+      { name: 'LV Trainer', strong: 'LV Trainer' },
+      { name: 'Balenciaga', strong: 'Balenciaga' },
+      { name: '限量版', strong: '限量版' },
+      { name: 'Designer', strong: 'Designer' }
     ],
     primaryLink: 'https://t.me/RRL_manager',
-    primaryText: 'Поставщик',
+    primaryText: 'Консультация',
     primaryIcon: 'fab fa-telegram',
-    secondaryLink: '',
+    secondaryLink: 'https://shop1697744208.v.weidian.com/?userid=1697744208&spider_token=3818',
     secondaryText: 'Магазин',
     secondaryIcon: 'fas fa-shopping-bag'
   }
 ]
 
-// Поставщики брендов
 const brandSuppliers = [
   {
     title: 'GOAT OFFICIAL',
     badgeText: 'TOP BATCH',
     description: 'Один из лучших агрегаторов брендовой одежды. Качество топ-реплик, каталог xyupoo.',
-    storeLink: 'https://goat-official.xyupoo.com',
-    storeLabel: 'goat-official.xyupoo.com',
+    storeLink: 'https://goat-official.x.yupoo.com',
+    storeLabel: 'goat-official.x.yupoo.com',
+    storeIcon: 'fas fa-globe',
     tags: [
-      { name: 'Trapstar' }, { name: 'Cortez' }, { name: 'Stone Island' },
-      { name: 'CP Company' }, { name: 'Polar' }, { name: 'Dime' },
-      { name: 'Nike/Supreme' }, { name: 'Gallery Dept' }, { name: 'Vetements' }
+      { name: 'Trapstar', strong: 'Trapstar' },
+      { name: 'Corteiz', strong: 'Corteiz' }
     ],
     primaryLink: 'https://t.me/RRL_manager',
-    primaryText: 'Поставщик',
+    primaryText: 'Закупка',
     primaryIcon: 'fab fa-telegram',
-    secondaryLink: '',
+    secondaryLink: 'https://goat-official.x.yupoo.com',
     secondaryText: 'Каталог',
     secondaryIcon: 'fas fa-images'
   },
   {
-    title: 'SI / CP HUB',
-    badgeText: 'PREMIUM FABRIC',
-    description: 'Специализированный поставщик Stone Island, CP Company, Cargo. Оригинальные бирки, элитный материал.',
+    title: 'GOAT OFFICIAL 222',
+    badgeText: 'STREETWEAR',
+    description: 'Специализация на уличной моде. Syn, Mt, Bpm бренды.',
+    storeLink: 'https://goat-official222.x.yupoo.com',
+    storeLabel: 'goat-official222.x.yupoo.com',
+    storeIcon: 'fas fa-globe',
     tags: [
-      { name: 'Stone Island', strong: '' },
-      { name: 'CP Company', strong: '' },
-      { name: 'Cargo pants', strong: '' },
-      { name: 'Shadow Project', strong: '' }
+      { name: 'Syn', strong: 'Syn' },
+      { name: 'Mt', strong: 'Mt' },
+      { name: 'Bpm', strong: 'Bpm' }
     ],
     primaryLink: 'https://t.me/RRL_manager',
-    primaryText: 'Поставщик',
+    primaryText: 'Закупка',
     primaryIcon: 'fab fa-telegram',
-    secondaryLink: '',
-    secondaryText: 'Чат',
-    secondaryIcon: 'fas fa-headset'
+    secondaryLink: 'https://goat-official222.x.yupoo.com',
+    secondaryText: 'Каталог',
+    secondaryIcon: 'fas fa-images'
+  },
+  {
+    title: 'TOP STONEY STOCK',
+    badgeText: 'STONE ISLAND',
+    description: 'Эксклюзивный поставщик Stone Island. Высокое качество, оригинальные бирки.',
+    storeLink: 'https://topstoneystock.x.yupoo.com',
+    storeLabel: 'topstoneystock.x.yupoo.com',
+    storeIcon: 'fas fa-gem',
+    tags: [
+      { name: 'Stone Island', strong: 'Stone Island' },
+      { name: 'Shadow Project', strong: 'Shadow Project' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Цены SI',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://topstoneystock.x.yupoo.com',
+    secondaryText: 'Каталог',
+    secondaryIcon: 'fas fa-images'
+  },
+  {
+    title: 'KONNG GONNG',
+    badgeText: 'CP COMPANY',
+    description: 'Специализированный поставщик CP Company. Премиум качество.',
+    storeLink: 'https://konng-gonng.x.yupoo.com',
+    storeLabel: 'konng-gonng.x.yupoo.com',
+    storeIcon: 'fas fa-tshirt',
+    tags: [
+      { name: 'CP Company', strong: 'CP Company' },
+      { name: 'Goggle', strong: 'Goggle' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Купить',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://konng-gonng.x.yupoo.com',
+    secondaryText: 'Каталог',
+    secondaryIcon: 'fas fa-images'
+  },
+  {
+    title: 'DRAGON REP',
+    badgeText: 'STREET',
+    description: 'Polar, Dime и другие стритвир бренды. Отличное качество.',
+    storeLink: 'https://dragonrep333.x.yupoo.com',
+    storeLabel: 'dragonrep333.x.yupoo.com',
+    storeIcon: 'fas fa-dragon',
+    tags: [
+      { name: 'Polar', strong: 'Polar' },
+      { name: 'Dime', strong: 'Dime' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Заказать',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://dragonrep333.x.yupoo.com',
+    secondaryText: 'Каталог',
+    secondaryIcon: 'fas fa-images'
+  },
+  {
+    title: 'NO GHOST',
+    badgeText: 'ICONIC',
+    description: 'Nike, Supreme — классика стритвира в лучшем качестве.',
+    storeLink: 'https://noghost.x.yupoo.com',
+    storeLabel: 'noghost.x.yupoo.com',
+    storeIcon: 'fas fa-ghost',
+    tags: [
+      { name: 'Nike', strong: 'Nike' },
+      { name: 'Supreme', strong: 'Supreme' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Купить',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://noghost.x.yupoo.com',
+    secondaryText: 'Каталог',
+    secondaryIcon: 'fas fa-images'
+  },
+  {
+    title: 'CHAOS MADE',
+    badgeText: 'DESIGNER',
+    description: 'Gallery Dept, Denim Tears — дизайнерская одежда премиум-сегмента.',
+    storeLink: 'https://chaosmade.x.yupoo.com',
+    storeLabel: 'chaosmade.x.yupoo.com',
+    storeIcon: 'fas fa-palette',
+    tags: [
+      { name: 'Gallery Dept', strong: 'Gallery Dept' },
+      { name: 'Denim Tears', strong: 'Denim Tears' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Консультация',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://chaosmade.x.yupoo.com',
+    secondaryText: 'Каталог',
+    secondaryIcon: 'fas fa-images'
+  },
+  {
+    title: 'VETEMENTS SHOP',
+    badgeText: 'HIGH FASHION',
+    description: 'Эксклюзивный поставщик Vetements. Оверсайз, хай-фэшн.',
+    storeLink: 'https://vetementsshop.x.yupoo.com',
+    storeLabel: 'vetementsshop.x.yupoo.com',
+    storeIcon: 'fas fa-crown',
+    tags: [
+      { name: 'Vetements', strong: 'Vetements' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Купить',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://vetementsshop.x.yupoo.com',
+    secondaryText: 'Каталог',
+    secondaryIcon: 'fas fa-images'
+  },
+  {
+    title: 'BAYMAX CLOTH',
+    badgeText: 'TECH WEAR',
+    description: 'ACG, FOG — технологичная одежда и уличный стиль.',
+    storeLink: 'https://baymaxcloth.x.yupoo.com',
+    storeLabel: 'baymaxcloth.x.yupoo.com',
+    storeIcon: 'fas fa-robot',
+    tags: [
+      { name: 'ACG', strong: 'ACG' },
+      { name: 'FOG', strong: 'FOG' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Заказать',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://baymaxcloth.x.yupoo.com',
+    secondaryText: 'Каталог',
+    secondaryIcon: 'fas fa-images'
+  },
+  {
+    title: 'RICK OWENS TAOBAO',
+    badgeText: 'DARK AVANT',
+    description: 'Официальный магазин Rick Owens на Taobao. Аутентичное качество.',
+    storeLink: 'https://shop141339468.world.taobao.com',
+    storeLabel: 'shop141339468.world.taobao.com',
+    storeIcon: 'fas fa-shopping-cart',
+    tags: [
+      { name: 'Rick Owens', strong: 'Rick Owens' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Выкупить',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://shop141339468.world.taobao.com',
+    secondaryText: 'Магазин',
+    secondaryIcon: 'fas fa-external-link-alt'
+  },
+  {
+    title: 'HENGYU CLUB',
+    badgeText: 'LUXURY',
+    description: 'Amiri — премиальная дизайнерская одежда. Джинсы, футболки, аксессуары.',
+    storeLink: 'https://hengyuclub.x.yupoo.com',
+    storeLabel: 'hengyuclub.x.yupoo.com',
+    storeIcon: 'fas fa-gem',
+    tags: [
+      { name: 'Amiri', strong: 'Amiri' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Купить',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://hengyuclub.x.yupoo.com',
+    secondaryText: 'Каталог',
+    secondaryIcon: 'fas fa-images'
+  },
+  {
+    title: 'REPS BROTHERS',
+    badgeText: 'CASUAL',
+    description: 'Palace, Ami Paris — европейский стритвир и повседневная мода.',
+    storeLink: 'https://repsbrothers.x.yupoo.com',
+    storeLabel: 'repsbrothers.x.yupoo.com',
+    storeIcon: 'fas fa-users',
+    tags: [
+      { name: 'Palace', strong: 'Palace' },
+      { name: 'Ami', strong: 'Ami' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Заказать',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://repsbrothers.x.yupoo.com',
+    secondaryText: 'Каталог',
+    secondaryIcon: 'fas fa-images'
+  },
+  {
+    title: 'FAKE LAB',
+    badgeText: 'OFF WHITE',
+    description: 'Эксклюзивный поставщик Off-White. Лучшие реплики на рынке.',
+    storeLink: 'https://fakelab.x.yupoo.com',
+    storeLabel: 'fakelab.x.yupoo.com',
+    storeIcon: 'fas fa-flask',
+    tags: [
+      { name: 'Off White', strong: 'Off White' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Купить',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://fakelab.x.yupoo.com',
+    secondaryText: 'Каталог',
+    secondaryIcon: 'fas fa-images'
+  },
+  {
+    title: 'LANBO 325',
+    badgeText: 'FEAR OF GOD',
+    description: 'Специализация на Fear of God. Essential, Mainline коллекции.',
+    storeLink: 'https://lanbo325.x.yupoo.com',
+    storeLabel: 'lanbo325.x.yupoo.com',
+    storeIcon: 'fas fa-cloud',
+    tags: [
+      { name: 'FOG', strong: 'FOG' },
+      { name: 'Essentials', strong: 'Essentials' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Заказать',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://lanbo325.x.yupoo.com',
+    secondaryText: 'Каталог',
+    secondaryIcon: 'fas fa-images'
+  },
+  {
+    title: 'PIKACHU SHOP',
+    badgeText: 'SPORTS',
+    description: 'Eric Emanuel — баскетбольная эстетика, шорты, худи.',
+    storeLink: 'https://pikachushop.x.yupoo.com',
+    storeLabel: 'pikachushop.x.yupoo.com',
+    storeIcon: 'fas fa-bolt',
+    tags: [
+      { name: 'Eric Emanuel', strong: 'Eric Emanuel' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Купить',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://pikachushop.x.yupoo.com',
+    secondaryText: 'Каталог',
+    secondaryIcon: 'fas fa-images'
+  },
+  {
+    title: 'HUNTER 0824',
+    badgeText: 'STREET',
+    description: 'Supreme, FOG — классика и современный стритвир.',
+    storeLink: 'https://hunter0824.x.yupoo.com',
+    storeLabel: 'hunter0824.x.yupoo.com',
+    storeIcon: 'fas fa-crosshairs',
+    tags: [
+      { name: 'Supreme', strong: 'Supreme' },
+      { name: 'FOG', strong: 'FOG' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Заказать',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://hunter0824.x.yupoo.com',
+    secondaryText: 'Каталог',
+    secondaryIcon: 'fas fa-images'
+  },
+  {
+    title: 'JETLIFE FASHION',
+    badgeText: '0832 COMEBACK',
+    description: 'Популярный поставщик 0832 Comeback. Широкий ассортимент, доступные цены.',
+    storeLink: 'https://www.jetlifefashion.com',
+    storeLabel: 'jetlifefashion.com',
+    storeIcon: 'fas fa-jet-fighter',
+    tags: [
+      { name: '0832 Comeback', strong: '0832 Comeback' }
+    ],
+    primaryLink: 'https://t.me/RRL_manager',
+    primaryText: 'Выкупить',
+    primaryIcon: 'fab fa-telegram',
+    secondaryLink: 'https://www.jetlifefashion.com',
+    secondaryText: 'Сайт',
+    secondaryIcon: 'fas fa-external-link-alt'
   }
 ]
 
-// Таблица доставки
 const weightColumns = ['2-3kg', '4-6kg', '7kg', '8kg', '9kg', '10kg']
-const shippingData = [
-  { country: 'Europe', '2-3kg': '18$', '4-6kg': '17$', '7kg': '16$', '8kg': '15$', '9kg': '14.5$', '10kg': '13.5$' },
-  { country: 'U.A.E', '2-3kg': '17$', '4-6kg': '16$', '7kg': '15$', '8kg': '14.5$', '9kg': '14.5$', '10kg': '13.5$' },
-  { country: 'U.K', '2-3kg': '19$', '4-6kg': '18$', '7kg': '17$', '8kg': '16.5$', '9kg': '17$', '10kg': '15.5$' },
-  { country: 'Ukraine', '2-3kg': '20$', '4-6kg': '20$', '7kg': '20$', '8kg': '20$', '9kg': '20$', '10kg': '20$' },
-  { country: 'Malta', '2-3kg': '23$', '4-6kg': '20$', '7kg': '19$', '8kg': '17.5$', '9kg': '16$', '10kg': '15$' },
-  { country: 'Cyprus', '2-3kg': '19$', '4-6kg': '18$', '7kg': '17$', '8kg': '16.5$', '9kg': '17$', '10kg': '15.5$' },
-  { country: 'Moldova', '2-3kg': '25$', '4-6kg': '25$', '7kg': '23$', '8kg': '22$', '9kg': '21$', '10kg': '20$' },
-  { country: 'Israel', '2-3kg': '25$', '4-6kg': '24$', '7kg': '23$', '8kg': '22$', '9kg': '21$', '10kg': '20$' },
-  { country: 'Norway', '2-3kg': '22$', '4-6kg': '19$', '7kg': '18$', '8kg': '17$', '9kg': '16$', '10kg': '15$' },
-  { country: 'Switzerland', '2-3kg': '23$', '4-6kg': '21$', '7kg': '19$', '8kg': '18$', '9kg': '17$', '10kg': '16$' },
-  { country: 'U.S.', '2-3kg': '22$', '4-6kg': '19$', '7kg': '18$', '8kg': '17$', '9kg': '16$', '10kg': '15$' },
-  { country: 'Indonesia', '2-3kg': '25$', '4-6kg': '23$', '7kg': '22$', '8kg': '21$', '9kg': '20$', '10kg': '20$' },
-  { country: 'Thailand', '2-3kg': '25$', '4-6kg': '23$', '7kg': '22$', '8kg': '21$', '9kg': '20$', '10kg': '20$' },
-  { country: 'Armenia', '2-3kg': '24$', '4-6kg': '24$', '7kg': '24$', '8kg': '24$', '9kg': '24$', '10kg': '24$' }
-]
 
 const shippingInfo = `
   <i class="fas fa-box-open"></i> <strong>MIN CONDITIONS:</strong> первая посылка 60×50×60 см, мин. вес 25kg. Коэффициент 500 в отдельных странах (*)<br>
@@ -180,6 +463,8 @@ const features = [
   { icon: 'fas fa-bolt', text: 'прямые фабрики Китая' },
   { icon: 'fas fa-shield-haltered', text: 'страховка груза' },
   { icon: 'fas fa-headset', text: '24/7 поддержка в тг' },
-  { icon: 'fas fa-tachometer-alt', text: 'трекинг 24/7' }
+  { icon: 'fas fa-tachometer-alt', text: 'трекинг 24/7' },
+  { icon: 'fas fa-dollar-sign', text: 'лучшие цены на кг' },
+  { icon: 'fas fa-box', text: 'упаковка 3$ фикс' }
 ]
 </script>

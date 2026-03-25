@@ -19,7 +19,7 @@
     
     <footer class="main-footer">
       <div class="copyright">
-        © {{ currentYear }} REDRAY LOGISTICS — {{ footerText }}
+        © {{ currentYear }} REDRAY LOGISTICS
       </div>
       <div class="footer-links">
         <a
@@ -53,7 +53,7 @@ defineProps({
   },
   tagline: {
     type: String,
-    default: 'CHINA DIRECT'
+    default: ''
   },
   footerText: {
     type: String,
@@ -68,7 +68,7 @@ const currentYear = new Date().getFullYear()
 .main-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 8rem 2rem 1.8rem;
+  padding: 7rem 2rem 1.8rem;
 }
 
 .main-header {

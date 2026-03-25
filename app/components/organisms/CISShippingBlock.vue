@@ -253,13 +253,14 @@ const russiaBelarus = [
   margin-bottom: 1.2rem;
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--red);
+  color: var(--text-primary);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .country-group__header i {
   font-size: 1.3rem;
+  color: var(--red);
 }
 
 .table-wrapper {

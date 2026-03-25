@@ -13,7 +13,6 @@
           <TableCell
             v-for="weight in weightColumns"
             :key="weight"
-            :highlight="row[weight] === '20$'"
           >
             {{ row[weight] }}
           </TableCell>

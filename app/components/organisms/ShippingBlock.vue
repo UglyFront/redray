@@ -3,43 +3,84 @@
     <div class="shipping-block__header">
       <h3 class="shipping-block__title">
         <i class="fas fa-dollar-sign"></i>
-        {{ title }}
+        СТОИМОСТЬ ЗА КГ В СТРАНЫ
       </h3>
       <div class="shipping-block__coefficient">
         <i class="fas fa-cube"></i>
-        {{ coefficientText }}
+        объемный вес /7000
       </div>
     </div>
     
-    <ShippingTable :data="tableData" :weightColumns="weightColumns" />
+    <div class="table-wrapper">
+      <table class="rate-table">
+        <thead>
+          <tr>
+            <th>Страны</th>
+            <th>2-3kg</th>
+            <th>4-6kg</th>
+            <th>7kg</th>
+            <th>8kg</th>
+            <th>9kg</th>
+            <th>10kg</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="row in tableData" :key="row.country">
+            <td class="country-cell">{{ row.country }}</td>
+            <TableCell
+              v-for="weight in weightColumns"
+              :key="weight"
+            >
+              {{ row[weight]?.replace('_', '') || row[weight] }}
+            </TableCell>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     
-    <div class="shipping-block__info" v-html="infoHtml"></div>
+    <div class="shipping-block__info">
+      <p><i class="fas fa-box"></i> <strong>Максимальный размер первой посылки:</strong> 60×50×60 см</p>
+      <p><i class="fas fa-weight-hanging"></i> <strong>Максимальный вес первой посылки:</strong> 25kg</p>
+      <p><i class="fas fa-star"></i> <strong>Коэффициент 5000</strong> в некоторых странах (выделены звездочкой *)</p>
+      <p><i class="fas fa-clock"></i> <strong>Ориентировочный срок:</strong> 6-20 рабочих дней с момента отправки</p>
+      <p><i class="fas fa-credit-card"></i> <strong>Оплата:</strong> после выставления счета в течение трех дней</p>
+      <p><i class="fas fa-chart-line"></i> <strong>Оптовые заказы:</strong> обсуждаются в личных сообщениях для наиболее выгодной цены за kg</p>
+    </div>
     
     <div class="shipping-block__footnote">
       <span>
         <i class="fas fa-chart-line"></i>
-        {{ footnoteLeft }}
+        Объемный вес рассчитывается по коэффициенту до 7000
       </span>
       <span>
         <i class="fab fa-telegram"></i>
-        {{ footnoteRight }}
+        Менеджер: @RRL_manager
       </span>
     </div>
   </div>
 </template>
 
 <script setup>
-import ShippingTable from '@/components/molecules/ShippingTable.vue'
+import TableCell from '@/components/atoms/TableCell.vue'
 
-defineProps({
-  title: { type: String, required: true },
-  coefficientText: { type: String, required: true },
-  tableData: { type: Array, required: true },
-  weightColumns: { type: Array, default: () => ['2-3kg', '4-6kg', '7kg', '8kg', '9kg', '10kg'] },
-  infoHtml: { type: String, required: true },
-  footnoteLeft: { type: String, required: true },
-  footnoteRight: { type: String, required: true }
-})
+const weightColumns = ['2-3kg', '4-6kg', '7kg', '8kg', '9kg', '10kg']
+
+const tableData = [
+  { country: 'Europe', '2-3kg': '18$', '4-6kg': '17$', '7kg': '16$', '8kg': '15$', '9kg': '14.5$', '10kg': '13.5$' },
+  { country: 'U.A.E', '2-3kg': '17$', '4-6kg': '16$', '7kg': '15$', '8kg': '14.5$', '9kg': '14$', '10kg': '13.5$' },
+  { country: 'U.K', '2-3kg': '19$', '4-6kg': '18$', '7kg': '17$', '8kg': '16.5$', '9kg': '17$', '10kg': '15.5$' },
+  { country: 'Ukraine', '2-3kg': '20$', '4-6kg': '20$', '7kg': '20$', '8kg': '20$', '9kg': '20$_', '10kg': '20$_' },
+  { country: 'Malta', '2-3kg': '23$', '4-6kg': '20$', '7kg': '19$', '8kg': '17.5$', '9kg': '16$_', '10kg': '15$_' },
+  { country: 'Cyprus', '2-3kg': '19$', '4-6kg': '18$_', '7kg': '17$_', '8kg': '16.5$_', '9kg': '17$_', '10kg': '15.5$_' },
+  { country: 'Moldova', '2-3kg': '25$_', '4-6kg': '25$_', '7kg': '23$_', '8kg': '22$_', '9kg': '21$_', '10kg': '20$_' },
+  { country: 'Israel', '2-3kg': '25$_', '4-6kg': '24$_', '7kg': '23$_', '8kg': '22$_', '9kg': '21$_', '10kg': '20$_' },
+  { country: 'Norway', '2-3kg': '22$_', '4-6kg': '19$_', '7kg': '18$_', '8kg': '17$_', '9kg': '16$_', '10kg': '15$_' },
+  { country: 'Switzerland', '2-3kg': '23$_', '4-6kg': '21$_', '7kg': '19$_', '8kg': '18$_', '9kg': '17$_', '10kg': '16$_' },
+  { country: 'U.S.', '2-3kg': '22$_', '4-6kg': '19$_', '7kg': '18$_', '8kg': '17$_', '9kg': '16$_', '10kg': '15$_' },
+  { country: 'Indonesia', '2-3kg': '25$_', '4-6kg': '23$_', '7kg': '22$_', '8kg': '21$_', '9kg': '21$_', '10kg': '20$_' },
+  { country: 'Thailand', '2-3kg': '25$_', '4-6kg': '23$_', '7kg': '22$_', '8kg': '21$_', '9kg': '21$_', '10kg': '20$_' },
+  { country: 'Armenia', '2-3kg': '24$_', '4-6kg': '24$_', '7kg': '24$_', '8kg': '24$_', '9kg': '24$_', '10kg': '24$_' }
+]
 </script>
 
 <style scoped>
@@ -48,7 +89,7 @@ defineProps({
   background: var(--card-bg);
   border-radius: var(--border-radius-md);
   border: 1px solid var(--border-dim);
-  padding: 1.5rem 1rem;
+  padding: 1.5rem;
 }
 
 .shipping-block__header {
@@ -56,8 +97,9 @@ defineProps({
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
-  margin-bottom: 1.2rem;
-  padding: 0 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--red);
 }
 
 .shipping-block__title {
@@ -73,32 +115,85 @@ defineProps({
 }
 
 .shipping-block__coefficient {
-  font-size: 0.7rem;
-  background: var(--bg);
+  font-size: 0.75rem;
+  background: rgba(225, 29, 72, 0.1);
   padding: 4px 12px;
-  border-radius: var(--border-radius-xl);
+  border-radius: var(--border-radius-lg);
   color: var(--text-muted);
 }
 
-.shipping-block__info {
-  margin-top: 1.5rem;
-  background: rgba(0, 0, 0, 0.03);
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius-sm);
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  border-left: 3px solid var(--red);
-  line-height: 1.6;
+.shipping-block__coefficient i {
+  color: var(--red);
+  margin-right: 4px;
 }
 
-/* [data-theme="dark"] .shipping-block__info {
-  background: #0c0c0e;
-} */
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.rate-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  min-width: 680px;
+}
+
+.rate-table th {
+  text-align: center;
+  padding: 12px 8px;
+  background: rgba(225, 29, 72, 0.08);
+  color: var(--red);
+  font-weight: 700;
+  border-bottom: 1px solid var(--border-dim);
+}
+
+.rate-table td {
+  text-align: center;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--border-dim);
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+.rate-table .country-cell {
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: left;
+  padding-left: 12px;
+}
+
+.rate-table tr:hover td {
+  background: rgba(225, 29, 72, 0.05);
+  color: var(--text-primary);
+}
+
+.shipping-block__info {
+  background: rgba(225, 29, 72, 0.05);
+  border-radius: var(--border-radius-sm);
+  padding: 1rem 1.2rem;
+  margin: 1rem 0;
+}
+
+.shipping-block__info p {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.shipping-block__info p:last-child {
+  margin-bottom: 0;
+}
 
 .shipping-block__info i {
   color: var(--red);
   width: 20px;
-  margin-right: 4px;
+  margin-right: 6px;
+}
+
+.shipping-block__info strong {
+  color: var(--text-primary);
 }
 
 .shipping-block__footnote {
@@ -106,13 +201,35 @@ defineProps({
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 1rem;
   margin-top: 1rem;
-  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-dim);
   color: var(--text-muted);
 }
 
 .shipping-block__footnote i {
   color: var(--red);
   margin-right: 4px;
+}
+
+@media (max-width: 768px) {
+  .shipping-block {
+    padding: 1rem;
+  }
+  
+  .shipping-block__title {
+    font-size: 1.2rem;
+  }
+  
+  .shipping-block__header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .shipping-block__footnote {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 </style>
