@@ -2,7 +2,7 @@
 
 <template>
   <div class="default">
-    <NuxtPage />
+    <slot />
   </div>
 </template>
 

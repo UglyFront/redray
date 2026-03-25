@@ -3,10 +3,22 @@
     <header class="main-header">
       <div class="logo">
         <h1>REDRAY<span>LOGISTICS</span></h1>
-        <p>{{ tagline }}</p>
       </div>
       <div class="header-right">
         <HeaderLinks :links="headerLinks" />
+        
+        <div class="lang-selector">
+          <button
+            v-for="locale in ['ru', 'en']"
+            :key="locale"
+            class="lang-btn"
+            :class="{ active: $i18n.locale === locale }"
+            @click="setLocale(locale)"
+          >
+            {{ locale.toUpperCase() }}
+          </button>
+        </div>
+        
         <ThemeToggle />
       </div>
     </header>
@@ -42,26 +54,13 @@ import HeaderLinks from '@/components/molecules/HeaderLinks.vue'
 import RedLine from '@/components/atoms/RedLine.vue'
 import ThemeToggle from '@/components/atoms/ThemeToggle.vue'
 
-defineProps({
-  headerLinks: {
-    type: Array,
-    required: true
-  },
-  footerLinks: {
-    type: Array,
-    required: true
-  },
-  tagline: {
-    type: String,
-    default: ''
-  },
-  footerText: {
-    type: String,
-    default: 'топ-поставщики'
-  }
-})
-
+const { t, setLocale } = useI18n()
 const currentYear = new Date().getFullYear()
+
+defineProps({
+  headerLinks: Array,
+  footerLinks: Array
+})
 </script>
 
 <style scoped>
@@ -107,8 +106,6 @@ const currentYear = new Date().getFullYear()
 .logo h1 span {
   color: var(--red);
   background: none;
-  -webkit-background-clip: unset;
-  background-clip: unset;
 }
 
 .logo p {
@@ -119,8 +116,33 @@ const currentYear = new Date().getFullYear()
   margin-top: 4px;
 }
 
-.main-content {
-  min-height: 60vh;
+.lang-selector {
+  display: flex;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 40px;
+  padding: 4px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 30px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.lang-btn.active {
+  background: var(--red);
+  color: white;
+}
+
+.lang-btn:hover:not(.active) {
+  color: var(--red);
 }
 
 .main-footer {

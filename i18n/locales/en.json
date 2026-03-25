@@ -1,0 +1,447 @@
+{
+  "logo": "REDRAY LOGISTICS",
+  "tagline": "",
+  "theme": "Theme",
+  "language": "Language",
+  "light": "Light",
+  "dark": "Dark",
+  "enter": "ENTER CATALOG",
+  "shoes": "FOOTWEAR",
+  "shoes_subtitle": "power suppliers",
+  "brands": "BY BRANDS",
+  "brands_subtitle": "streetwear & luxury batch",
+  "accessories": "ACCESSORIES & BAGS",
+  "watches": "WATCHES",
+  "electronics": "ELECTRONICS",
+  "shipping_world": "SHIPPING RATES · WORLD",
+  "shipping_cis": "SHIPPING RATES TO CIS COUNTRIES",
+  "coefficient": "volumetric weight /7000",
+  "shipping_info_html": "<i class=\"fas fa-box-open\"></i> <strong>MIN CONDITIONS:</strong> first parcel 60×50×60 cm, min. weight 25kg. Coefficient 500 in some countries (*)<br><i class=\"fas fa-ship\"></i> <strong>Lead time:</strong> 6-20 business days after dispatch. Invoice must be paid within 3 days.<br><i class=\"fas fa-fire\"></i> <strong>PERSONAL OFFER:</strong> shipping and price per kg are discussed in DM — we give you the best rate.",
+  "weight_columns": ["2-3kg", "4-6kg", "7kg", "8kg", "9kg", "10kg"],
+  "header_links": [
+    { "label": "TELEGRAM", "href": "https://t.me/RedRayLogistics", "icon": "fab fa-telegram" },
+    { "label": "TIKTOK", "href": "https://www.tiktok.com/red_raylogistics", "icon": "fab fa-tiktok" },
+    { "label": "MANAGER", "href": "https://t.me/RRL_manager", "icon": "fas fa-user-headset" },
+    { "label": "BOT", "href": "https://t.me/rule_and_blanksbot", "icon": "fas fa-robot" },
+    { "label": "ORDER", "href": "https://t.me/RedRayLogistics/259", "icon": "fas fa-question-circle" }
+  ],
+  "footer_links": [
+    { "label": "channel", "href": "https://t.me/RedRayLogistics", "icon": "fab fa-telegram" },
+    { "label": "manager", "href": "https://t.me/RRL_manager", "icon": "fas fa-user-tie" },
+    { "label": "bot", "href": "https://t.me/rule_and_blanksbot", "icon": "fas fa-bolt" }
+  ],
+  "shoe_suppliers": [
+    {
+      "title": "UMKAO",
+      "badgeText": "SNEAKER FACTORY",
+      "description": "The largest supplier of sneakers and casual footwear. Xyupoo catalog, stable flow, low prices.",
+      "storeLink": "https://umkao.x.yupoo.com",
+      "storeLabel": "umkao.x.yupoo.com",
+      "storeIcon": "fas fa-store",
+      "tags": [
+        { "name": "Nike", "strong": "Nike" },
+        { "name": "Adidas", "strong": "Adidas" },
+        { "name": "New Balance", "strong": "New Balance" },
+        { "name": "Asics", "strong": "Asics" },
+        { "name": "Yeezy", "strong": "Yeezy" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Purchase",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://umkao.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-external-link-alt"
+    },
+    {
+      "title": "XIENIAN",
+      "badgeText": "SNEAKER MARKET",
+      "description": "Popular supplier with a huge assortment. Regular catalog updates.",
+      "storeLink": "https://x.yupoo.com/photos/xienian/albums",
+      "storeLabel": "xienian albums",
+      "storeIcon": "fas fa-store",
+      "tags": [
+        { "name": "Nike", "strong": "Nike" },
+        { "name": "Jordan", "strong": "Jordan" },
+        { "name": "New Balance", "strong": "New Balance" },
+        { "name": "Adidas", "strong": "Adidas" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Purchase",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://x.yupoo.com/photos/xienian/albums",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-external-link-alt"
+    },
+    {
+      "title": "WEIDIAN STYLE",
+      "badgeText": "DIRECT SALE",
+      "description": "Weidian store with a wide range of footwear. Fast order processing.",
+      "storeLink": "https://h5.weidian.com/decorationshop-category/category.html?c=148133437&userid=1624885820&wfbr=BuyercopyURL&share_relation=4c3947d4c0c9c014_18spider_token=fefb",
+      "storeLabel": "weidian.com",
+      "storeIcon": "fas fa-link",
+      "tags": [
+        { "name": "Dunk", "strong": "Dunk" },
+        { "name": "Jordan", "strong": "Jordan" },
+        { "name": "Yeezy", "strong": "Yeezy" },
+        { "name": "Travis Scott", "strong": "Travis Scott" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Order",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://h5.weidian.com/decorationshop-category/category.html?c=148133437&userid=1624885820&wfbr=BuyercopyURL&share_relation=4c3947d4c0c9c014_18spider_token=fefb",
+      "secondaryText": "View",
+      "secondaryIcon": "fas fa-search"
+    },
+    {
+      "title": "WEIDIAN BASE",
+      "badgeText": "BUDGET",
+      "description": "Affordable prices, a large selection of sneakers for any brand.",
+      "storeLink": "https://weidian.com/?userid=1621765644&spider_token=4985",
+      "storeLabel": "weidian.com/userid=1621765644",
+      "storeIcon": "fas fa-link",
+      "tags": [
+        { "name": "Nike", "strong": "Nike" },
+        { "name": "Adidas", "strong": "Adidas" },
+        { "name": "New Balance", "strong": "New Balance" },
+        { "name": "Asics", "strong": "Asics" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Order",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://weidian.com/?userid=1621765644&spider_token=4985",
+      "secondaryText": "View",
+      "secondaryIcon": "fas fa-search"
+    },
+    {
+      "title": "TREND SNEAKERS",
+      "badgeText": "PREMIUM",
+      "description": "Rare releases, collaborations, exclusives. Weidian premium segment.",
+      "storeLink": "https://shop1697744208.v.weidian.com/?userid=1697744208&spider_token=3818",
+      "storeLabel": "shop1697744208.v.weidian.com",
+      "storeIcon": "fas fa-crown",
+      "tags": [
+        { "name": "LV Trainer", "strong": "LV Trainer" },
+        { "name": "Balenciaga", "strong": "Balenciaga" },
+        { "name": "Limited Edition", "strong": "Limited Edition" },
+        { "name": "Designer", "strong": "Designer" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Consult",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://shop1697744208.v.weidian.com/?userid=1697744208&spider_token=3818",
+      "secondaryText": "Shop",
+      "secondaryIcon": "fas fa-shopping-bag"
+    }
+  ],
+  "brand_suppliers": [
+    {
+      "title": "GOAT OFFICIAL",
+      "badgeText": "TOP BATCH",
+      "description": "One of the best aggregators of branded clothing. Top replica quality, xyupoo catalog.",
+      "storeLink": "https://goat-official.x.yupoo.com",
+      "storeLabel": "goat-official.x.yupoo.com",
+      "storeIcon": "fas fa-globe",
+      "tags": [
+        { "name": "Trapstar", "strong": "Trapstar" },
+        { "name": "Corteiz", "strong": "Corteiz" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Purchase",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://goat-official.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-images"
+    },
+    {
+      "title": "GOAT OFFICIAL 222",
+      "badgeText": "STREETWEAR",
+      "description": "Specialization in streetwear. Syn, Mt, Bpm brands.",
+      "storeLink": "https://goat-official222.x.yupoo.com",
+      "storeLabel": "goat-official222.x.yupoo.com",
+      "storeIcon": "fas fa-globe",
+      "tags": [
+        { "name": "Syn", "strong": "Syn" },
+        { "name": "Mt", "strong": "Mt" },
+        { "name": "Bpm", "strong": "Bpm" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Purchase",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://goat-official222.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-images"
+    },
+    {
+      "title": "TOP STONEY STOCK",
+      "badgeText": "STONE ISLAND",
+      "description": "Exclusive Stone Island supplier. High quality, original tags.",
+      "storeLink": "https://topstoneystock.x.yupoo.com",
+      "storeLabel": "topstoneystock.x.yupoo.com",
+      "storeIcon": "fas fa-gem",
+      "tags": [
+        { "name": "Stone Island", "strong": "Stone Island" },
+        { "name": "Shadow Project", "strong": "Shadow Project" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Prices",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://topstoneystock.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-images"
+    },
+    {
+      "title": "KONNG GONNG",
+      "badgeText": "CP COMPANY",
+      "description": "Specialized CP Company supplier. Premium quality.",
+      "storeLink": "https://konng-gonng.x.yupoo.com",
+      "storeLabel": "konng-gonng.x.yupoo.com",
+      "storeIcon": "fas fa-tshirt",
+      "tags": [
+        { "name": "CP Company", "strong": "CP Company" },
+        { "name": "Goggle", "strong": "Goggle" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Buy",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://konng-gonng.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-images"
+    },
+    {
+      "title": "DRAGON REP",
+      "badgeText": "STREET",
+      "description": "Polar, Dime and other streetwear brands. Excellent quality.",
+      "storeLink": "https://dragonrep333.x.yupoo.com",
+      "storeLabel": "dragonrep333.x.yupoo.com",
+      "storeIcon": "fas fa-dragon",
+      "tags": [
+        { "name": "Polar", "strong": "Polar" },
+        { "name": "Dime", "strong": "Dime" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Order",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://dragonrep333.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-images"
+    },
+    {
+      "title": "NO GHOST",
+      "badgeText": "ICONIC",
+      "description": "Nike, Supreme — streetwear classics in the best quality.",
+      "storeLink": "https://noghost.x.yupoo.com",
+      "storeLabel": "noghost.x.yupoo.com",
+      "storeIcon": "fas fa-ghost",
+      "tags": [
+        { "name": "Nike", "strong": "Nike" },
+        { "name": "Supreme", "strong": "Supreme" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Buy",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://noghost.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-images"
+    },
+    {
+      "title": "CHAOS MADE",
+      "badgeText": "DESIGNER",
+      "description": "Gallery Dept, Denim Tears — premium designer clothing.",
+      "storeLink": "https://chaosmade.x.yupoo.com",
+      "storeLabel": "chaosmade.x.yupoo.com",
+      "storeIcon": "fas fa-palette",
+      "tags": [
+        { "name": "Gallery Dept", "strong": "Gallery Dept" },
+        { "name": "Denim Tears", "strong": "Denim Tears" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Consult",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://chaosmade.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-images"
+    },
+    {
+      "title": "VETEMENTS SHOP",
+      "badgeText": "HIGH FASHION",
+      "description": "Exclusive Vetements supplier. Oversize, high fashion.",
+      "storeLink": "https://vetementsshop.x.yupoo.com",
+      "storeLabel": "vetementsshop.x.yupoo.com",
+      "storeIcon": "fas fa-crown",
+      "tags": [
+        { "name": "Vetements", "strong": "Vetements" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Buy",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://vetementsshop.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-images"
+    },
+    {
+      "title": "BAYMAX CLOTH",
+      "badgeText": "TECH WEAR",
+      "description": "ACG, FOG — technical clothing and street style.",
+      "storeLink": "https://baymaxcloth.x.yupoo.com",
+      "storeLabel": "baymaxcloth.x.yupoo.com",
+      "storeIcon": "fas fa-robot",
+      "tags": [
+        { "name": "ACG", "strong": "ACG" },
+        { "name": "FOG", "strong": "FOG" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Order",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://baymaxcloth.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-images"
+    },
+    {
+      "title": "RICK OWENS TAOBAO",
+      "badgeText": "DARK AVANT",
+      "description": "Official Rick Owens store on Taobao. Authentic quality.",
+      "storeLink": "https://shop141339468.world.taobao.com",
+      "storeLabel": "shop141339468.world.taobao.com",
+      "storeIcon": "fas fa-shopping-cart",
+      "tags": [
+        { "name": "Rick Owens", "strong": "Rick Owens" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Purchase",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://shop141339468.world.taobao.com",
+      "secondaryText": "Shop",
+      "secondaryIcon": "fas fa-external-link-alt"
+    },
+    {
+      "title": "HENGYU CLUB",
+      "badgeText": "LUXURY",
+      "description": "Amiri — premium designer clothing. Jeans, t-shirts, accessories.",
+      "storeLink": "https://hengyuclub.x.yupoo.com",
+      "storeLabel": "hengyuclub.x.yupoo.com",
+      "storeIcon": "fas fa-gem",
+      "tags": [
+        { "name": "Amiri", "strong": "Amiri" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Buy",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://hengyuclub.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-images"
+    },
+    {
+      "title": "REPS BROTHERS",
+      "badgeText": "CASUAL",
+      "description": "Palace, Ami Paris — European streetwear and casual fashion.",
+      "storeLink": "https://repsbrothers.x.yupoo.com",
+      "storeLabel": "repsbrothers.x.yupoo.com",
+      "storeIcon": "fas fa-users",
+      "tags": [
+        { "name": "Palace", "strong": "Palace" },
+        { "name": "Ami", "strong": "Ami" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Order",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://repsbrothers.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-images"
+    },
+    {
+      "title": "FAKE LAB",
+      "badgeText": "OFF WHITE",
+      "description": "Exclusive Off-White supplier. The best replicas on the market.",
+      "storeLink": "https://fakelab.x.yupoo.com",
+      "storeLabel": "fakelab.x.yupoo.com",
+      "storeIcon": "fas fa-flask",
+      "tags": [
+        { "name": "Off White", "strong": "Off White" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Buy",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://fakelab.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-images"
+    },
+    {
+      "title": "LANBO 325",
+      "badgeText": "FEAR OF GOD",
+      "description": "Specialization in Fear of God. Essential, Mainline collections.",
+      "storeLink": "https://lanbo325.x.yupoo.com",
+      "storeLabel": "lanbo325.x.yupoo.com",
+      "storeIcon": "fas fa-cloud",
+      "tags": [
+        { "name": "FOG", "strong": "FOG" },
+        { "name": "Essentials", "strong": "Essentials" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Order",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://lanbo325.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-images"
+    },
+    {
+      "title": "PIKACHU SHOP",
+      "badgeText": "SPORTS",
+      "description": "Eric Emanuel — basketball aesthetics, shorts, hoodies.",
+      "storeLink": "https://pikachushop.x.yupoo.com",
+      "storeLabel": "pikachushop.x.yupoo.com",
+      "storeIcon": "fas fa-bolt",
+      "tags": [
+        { "name": "Eric Emanuel", "strong": "Eric Emanuel" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Buy",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://pikachushop.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-images"
+    },
+    {
+      "title": "HUNTER 0824",
+      "badgeText": "STREET",
+      "description": "Supreme, FOG — classics and modern streetwear.",
+      "storeLink": "https://hunter0824.x.yupoo.com",
+      "storeLabel": "hunter0824.x.yupoo.com",
+      "storeIcon": "fas fa-crosshairs",
+      "tags": [
+        { "name": "Supreme", "strong": "Supreme" },
+        { "name": "FOG", "strong": "FOG" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Order",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://hunter0824.x.yupoo.com",
+      "secondaryText": "Catalog",
+      "secondaryIcon": "fas fa-images"
+    },
+    {
+      "title": "JETLIFE FASHION",
+      "badgeText": "0832 COMEBACK",
+      "description": "Popular supplier 0832 Comeback. Wide range, affordable prices.",
+      "storeLink": "https://www.jetlifefashion.com",
+      "storeLabel": "jetlifefashion.com",
+      "storeIcon": "fas fa-jet-fighter",
+      "tags": [
+        { "name": "0832 Comeback", "strong": "0832 Comeback" }
+      ],
+      "primaryLink": "https://t.me/RRL_manager",
+      "primaryText": "Purchase",
+      "primaryIcon": "fab fa-telegram",
+      "secondaryLink": "https://www.jetlifefashion.com",
+      "secondaryText": "Website",
+      "secondaryIcon": "fas fa-external-link-alt"
+    }
+  ],
+  "features": [
+    { "icon": "fas fa-bolt", "text": "direct China factories" },
+    { "icon": "fas fa-shield-haltered", "text": "cargo insurance" },
+    { "icon": "fas fa-headset", "text": "24/7 tg support" },
+    { "icon": "fas fa-tachometer-alt", "text": "24/7 tracking" },
+    { "icon": "fas fa-dollar-sign", "text": "best prices per kg" },
+    { "icon": "fas fa-box", "text": "packaging 3$ fixed" }
+  ]
+}
