@@ -36,13 +36,13 @@
       <div class="footer-links">
         <a
           v-for="link in footerLinks"
-          :key="link.label"
-          :href="link.href"
+          :key="$rt(link.label)"
+          :href="$rt(link.href)"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i :class="link.icon"></i>
-          {{ link.label }}
+          <i :class="$rt(link.icon)"></i>
+          {{ $rt(link.label) }}
         </a>
       </div>
     </footer>

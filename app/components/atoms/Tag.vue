@@ -1,6 +1,6 @@
 <template>
   <span class="tag">
-    <strong v-if="strong">{{ strong }}</strong>
+    <!-- <strong v-if="strong">{{ strong }}</strong> -->
     <slot />
   </span>
 </template>

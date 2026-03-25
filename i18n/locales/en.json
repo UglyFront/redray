@@ -1,5 +1,4 @@
 {
-  "logo": "REDRAY LOGISTICS",
   "tagline": "",
   "theme": "Theme",
   "language": "Language",
@@ -46,11 +45,8 @@
         { "name": "Yeezy", "strong": "Yeezy" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Purchase",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://umkao.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-external-link-alt"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "XIENIAN",
@@ -66,11 +62,8 @@
         { "name": "Adidas", "strong": "Adidas" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Purchase",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://x.yupoo.com/photos/xienian/albums",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-external-link-alt"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "WEIDIAN STYLE",
@@ -86,11 +79,8 @@
         { "name": "Travis Scott", "strong": "Travis Scott" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Order",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://h5.weidian.com/decorationshop-category/category.html?c=148133437&userid=1624885820&wfbr=BuyercopyURL&share_relation=4c3947d4c0c9c014_18spider_token=fefb",
-      "secondaryText": "View",
-      "secondaryIcon": "fas fa-search"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "WEIDIAN BASE",
@@ -106,11 +96,8 @@
         { "name": "Asics", "strong": "Asics" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Order",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://weidian.com/?userid=1621765644&spider_token=4985",
-      "secondaryText": "View",
-      "secondaryIcon": "fas fa-search"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "TREND SNEAKERS",
@@ -126,11 +113,8 @@
         { "name": "Designer", "strong": "Designer" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Consult",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://shop1697744208.v.weidian.com/?userid=1697744208&spider_token=3818",
-      "secondaryText": "Shop",
-      "secondaryIcon": "fas fa-shopping-bag"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     }
   ],
   "brand_suppliers": [
@@ -146,11 +130,8 @@
         { "name": "Corteiz", "strong": "Corteiz" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Purchase",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://goat-official.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-images"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "GOAT OFFICIAL 222",
@@ -165,11 +146,8 @@
         { "name": "Bpm", "strong": "Bpm" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Purchase",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://goat-official222.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-images"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "TOP STONEY STOCK",
@@ -183,11 +161,8 @@
         { "name": "Shadow Project", "strong": "Shadow Project" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Prices",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://topstoneystock.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-images"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "KONNG GONNG",
@@ -201,11 +176,8 @@
         { "name": "Goggle", "strong": "Goggle" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Buy",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://konng-gonng.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-images"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "DRAGON REP",
@@ -219,11 +191,8 @@
         { "name": "Dime", "strong": "Dime" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Order",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://dragonrep333.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-images"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "NO GHOST",
@@ -237,11 +206,8 @@
         { "name": "Supreme", "strong": "Supreme" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Buy",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://noghost.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-images"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "CHAOS MADE",
@@ -255,11 +221,8 @@
         { "name": "Denim Tears", "strong": "Denim Tears" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Consult",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://chaosmade.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-images"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "VETEMENTS SHOP",
@@ -272,11 +235,8 @@
         { "name": "Vetements", "strong": "Vetements" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Buy",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://vetementsshop.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-images"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "BAYMAX CLOTH",
@@ -290,11 +250,8 @@
         { "name": "FOG", "strong": "FOG" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Order",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://baymaxcloth.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-images"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "RICK OWENS TAOBAO",
@@ -307,11 +264,8 @@
         { "name": "Rick Owens", "strong": "Rick Owens" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Purchase",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://shop141339468.world.taobao.com",
-      "secondaryText": "Shop",
-      "secondaryIcon": "fas fa-external-link-alt"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "HENGYU CLUB",
@@ -324,11 +278,8 @@
         { "name": "Amiri", "strong": "Amiri" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Buy",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://hengyuclub.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-images"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "REPS BROTHERS",
@@ -342,11 +293,8 @@
         { "name": "Ami", "strong": "Ami" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Order",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://repsbrothers.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-images"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "FAKE LAB",
@@ -359,11 +307,8 @@
         { "name": "Off White", "strong": "Off White" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Buy",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://fakelab.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-images"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "LANBO 325",
@@ -377,11 +322,8 @@
         { "name": "Essentials", "strong": "Essentials" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Order",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://lanbo325.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-images"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "PIKACHU SHOP",
@@ -394,11 +336,8 @@
         { "name": "Eric Emanuel", "strong": "Eric Emanuel" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Buy",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://pikachushop.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-images"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "HUNTER 0824",
@@ -412,11 +351,8 @@
         { "name": "FOG", "strong": "FOG" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Order",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://hunter0824.x.yupoo.com",
-      "secondaryText": "Catalog",
-      "secondaryIcon": "fas fa-images"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     },
     {
       "title": "JETLIFE FASHION",
@@ -429,11 +365,8 @@
         { "name": "0832 Comeback", "strong": "0832 Comeback" }
       ],
       "primaryLink": "https://t.me/RRL_manager",
-      "primaryText": "Purchase",
-      "primaryIcon": "fab fa-telegram",
-      "secondaryLink": "https://www.jetlifefashion.com",
-      "secondaryText": "Website",
-      "secondaryIcon": "fas fa-external-link-alt"
+      "primaryText": "Vendor",
+      "primaryIcon": "fab fa-telegram"
     }
   ],
   "features": [

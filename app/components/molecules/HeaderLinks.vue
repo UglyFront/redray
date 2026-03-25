@@ -1,7 +1,7 @@
 <template>
   <div class="header-links">
-    <IconLink v-for="link in links" :key="link.label" :href="link.href" :icon="link.icon">
-      {{ link.label }}
+    <IconLink v-for="link in links" :key="$rt(link.label)" :href="$rt(link.href)" :icon="$rt(link.icon)">
+      {{ $rt(link.label) }}
     </IconLink>
   </div>
 </template>

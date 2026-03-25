@@ -1,37 +1,34 @@
 <template>
   <div class="card">
     <div class="card__header">
-      <h3 class="card__title">{{ title }}</h3>
-      <Badge :variant="badgeVariant">{{ badgeText }}</Badge>
+      <h3 class="card__title">{{ $rt(title) }}</h3>
+      <Badge :variant="badgeVariant">{{ $rt(badgeText) }}</Badge>
     </div>
     
     <div class="card__body">
-      <p class="card__description">{{ description }}</p>
+      <p class="card__description">{{ $rt(description) }}</p>
       
       <a
-        v-if="storeLink"
-        :href="storeLink"
+        v-if="$rt(storeLink)"
+        :href="$rt(storeLink)"
         target="_blank"
         class="card__store-link"
         rel="noopener noreferrer"
       >
         <i class="fas fa-store"></i>
-        <span>{{ storeLabel }}</span>
+        <span>{{ $rt(storeLabel) }}</span>
       </a>
       
       <div class="card__tags">
-        <Tag v-for="tag in tags" :key="tag.name" :strong="tag.strong">
-          {{ tag.name }}
+        <Tag v-for="tag in tags" :key="$rt(tag.name)" :strong="$rt(tag.strong)">
+          {{ $rt(tag.name) }}
         </Tag>
       </div>
     </div>
     
     <div class="card__actions">
-      <Button :href="primaryLink" variant="primary" :icon="primaryIcon">
-        {{ primaryText }}
-      </Button>
-      <Button v-if="secondaryLink" :href="secondaryLink" variant="outline" :icon="secondaryIcon">
-        {{ secondaryText }}
+      <Button :href="$rt(primaryLink)" variant="primary" target="_blank" :icon="$rt(primaryIcon)" tag="a">
+        {{ $rt(primaryText) }}
       </Button>
     </div>
   </div>
@@ -53,9 +50,6 @@ defineProps({
   primaryLink: { type: String, required: true },
   primaryText: { type: String, required: true },
   primaryIcon: { type: String, default: null },
-  secondaryLink: { type: String, required: true },
-  secondaryText: { type: String, required: true },
-  secondaryIcon: { type: String, default: null }
 })
 </script>
 
