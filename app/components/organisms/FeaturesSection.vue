@@ -22,8 +22,6 @@ defineProps({
 </script>
 
 <style scoped>
-@use '@/assets/styles/mixins' as m;
-
 .features-section {
   display: flex;
   flex-wrap: wrap;
