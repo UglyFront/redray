@@ -79,7 +79,7 @@ defineProps({
   padding: 1.3rem 1.5rem 0.5rem 1.5rem;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  gap: 4px;
   flex-wrap: wrap;
   border-bottom: 1px solid var(--border-dim);
 }

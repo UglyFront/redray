@@ -23,6 +23,8 @@
       footnoteLeft="объемный вес /7000"
       footnoteRight="менеджер: @RRL_manager"
     />
+
+    <CISShippingBlock />
     
     <!-- <FeaturesSection :features="features" /> -->
   </MainTemplate>
@@ -32,7 +34,8 @@
 import MainTemplate from '@/components/templates/MainTemplate.vue'
 import SuppliersGrid from '@/components/organisms/SuppliersGrid.vue'
 import ShippingBlock from '@/components/organisms/ShippingBlock.vue'
-import FeaturesSection from '@/components/organisms/FeaturesSection.vue'
+// import FeaturesSection from '@/components/organisms/FeaturesSection.vue'
+import CISShippingBlock from '@/components/organisms/CISShippingBlock.vue'
 
 // Данные для шапки
 const headerLinks = [

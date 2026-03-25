@@ -4,7 +4,7 @@
       <SectionMarker :icon="icon" />
       <h2 class="section-title">
         {{ title }}
-        <small v-if="subtitle">{{ subtitle }}</small>
+        <!-- <small v-if="subtitle">{{ subtitle }}</small> -->
       </h2>
     </div>
     
