@@ -3,25 +3,24 @@
     <div class="cis-shipping-block__header">
       <h3 class="cis-shipping-block__title">
         <i class="fas fa-ruble-sign"></i>
-        СТОИМОСТЬ ЗА КГ В СТРАНЫ СНГ
+        {{ $t('ciss.title') }}
       </h3>
       <div class="cis-shipping-block__note">
         <i class="fas fa-info-circle"></i>
-        Цены указаны за 1kg
+        {{ $t('ciss.kg') }}
       </div>
     </div>
 
-    <!-- Россия и Беларусь (первая таблица) -->
     <div class="country-group">
       <div class="country-group__header">
         <i class="fas fa-flag-checkered"></i>
-        <span>РОССИЯ / БЕЛАРУСЬ</span>
+        <span>{{ $t('ciss.russia_belarus') }}</span>
       </div>
       <div class="table-wrapper">
         <table class="rate-table">
           <thead>
             <tr>
-              <th>Страна</th>
+              <th>{{ $t('ciss.country') }}</th>
               <th>1-3kg</th>
               <th>4-6kg</th>
               <th>7kg</th>
@@ -45,25 +44,24 @@
       </div>
       <div class="delivery-info">
         <i class="fas fa-warehouse"></i>
-        Сначала посылка поступает на склад в Москве, после чего отправляется в разные города через различные транспортные компании. Доступен самовывоз со склада в МСК.
+        <span v-html="$t('ciss.russia_delivery_info')" />
       </div>
       <div class="packaging-info">
         <i class="fas fa-box"></i>
-        Стоимость упаковки фиксирована — <strong>3$</strong>, независимо от веса.
+        <span v-html="$t('ciss.russia_packaging_info')" />
       </div>
     </div>
 
-    <!-- Россия (ускоренная доставка) -->
     <div class="country-group">
       <div class="country-group__header">
         <i class="fas fa-rocket"></i>
-        <span>РОССИЯ (ЭКСПРЕСС ДОСТАВКА)</span>
+        <span>{{ $t('ciss.russiaExpress') }}</span>
       </div>
       <div class="table-wrapper">
         <table class="rate-table">
           <thead>
             <tr>
-              <th>Страна</th>
+              <th>{{ $t('ciss.country') }}</th>
               <th>1-3kg</th>
               <th>4-6kg</th>
               <th>7kg</th>
@@ -74,7 +72,7 @@
           </thead>
           <tbody>
             <tr>
-              <td class="country-cell">Россия</td>
+              <td class="country-cell">{{ $t('ciss.russiaExpress') }}</td>
               <td>30$</td>
               <td>30$</td>
               <td>29.5$</td>
@@ -87,25 +85,24 @@
       </div>
       <div class="delivery-info">
         <i class="fas fa-truck-fast"></i>
-        Сначала посылка поступает на склад в Москве, после чего отправляется в разные города через различные транспортные компании. Доступен самовывоз со склада в МСК.
+        <span v-html="$t('ciss.russia_delivery_info')" />
       </div>
       <div class="packaging-info">
         <i class="fas fa-box"></i>
-        Стоимость упаковки фиксирована — <strong>3$</strong>, независимо от веса.
+        <span v-html="$t('ciss.russia_packaging_info')" />
       </div>
     </div>
 
-    <!-- Казахстан -->
     <div class="country-group">
       <div class="country-group__header">
         <i class="fas fa-map-marker-alt"></i>
-        <span>КАЗАХСТАН</span>
+        <span>{{ $t('ciss.kz') }}</span>
       </div>
       <div class="table-wrapper">
         <table class="rate-table">
           <thead>
             <tr>
-              <th>Страна</th>
+              <th>{{ $t('ciss.country') }}</th>
               <th>1-3kg</th>
               <th>4-6kg</th>
               <th>7kg</th>
@@ -116,7 +113,7 @@
           </thead>
           <tbody>
             <tr>
-              <td class="country-cell">Казахстан</td>
+              <td class="country-cell">{{ $t('ciss.kz') }}</td>
               <td>7$</td>
               <td>7$</td>
               <td>7$</td>
@@ -129,25 +126,24 @@
       </div>
       <div class="delivery-info">
         <i class="fas fa-warehouse"></i>
-        Сначала посылка прибывает в Алматы, где доступен самовывоз со склада. Из Алматы в другие города доставка осуществляется через КазПочту.
+        <span v-html="$t('ciss.kz_delivery_info')" />
       </div>
       <div class="packaging-info">
         <i class="fas fa-box"></i>
-        Стоимость упаковки фиксирована — <strong>3$</strong>, независимо от веса.
+        <span v-html="$t('ciss.kz_packaging_info')" />
       </div>
     </div>
 
-    <!-- Кыргызстан -->
     <div class="country-group">
       <div class="country-group__header">
         <i class="fas fa-mountain"></i>
-        <span>КЫРГЫЗСТАН</span>
+        <span>{{ $t('ciss.kirgiz') }}</span>
       </div>
       <div class="table-wrapper">
         <table class="rate-table">
           <thead>
             <tr>
-              <th>Страна</th>
+              <th>{{ $t('ciss.country') }}</th>
               <th>5-6kg</th>
               <th>7kg</th>
               <th>8kg</th>
@@ -157,7 +153,7 @@
           </thead>
           <tbody>
             <tr>
-              <td class="country-cell">Кыргызстан</td>
+              <td class="country-cell">{{ $t('ciss.kirgiz') }}</td>
               <td>8$</td>
               <td>8$</td>
               <td>8$</td>
@@ -169,25 +165,25 @@
       </div>
       <div class="delivery-info">
         <i class="fas fa-truck"></i>
-        Сначала посылка доставляется на склад в Бишкеке, а затем отправляется местной службой доставки до адреса получателя.
+        <span v-html="$t('ciss.kirgiz_delivery_info')" />
       </div>
       <div class="packaging-info">
         <i class="fas fa-box"></i>
-        Стоимость упаковки фиксирована — <strong>3$</strong>, независимо от веса.
+        <span v-html="$t('ciss.kirgiz_packaging_info')" />
       </div>
       <div class="min-weight-warning">
         <i class="fas fa-exclamation-triangle"></i>
-        Минимальный вес отправки — <strong>5kg</strong>
+        <span v-html="$t('ciss.kirgiz_min')" />
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-const russiaBelarus = [
-  { name: 'Россия', '1-3kg': '8$', '4-6kg': '8$', '7kg': '8$', '8kg': '7.5$', '9kg': '7.5$', '10kg': '7$' },
-  { name: 'Беларусь', '1-3kg': '8$', '4-6kg': '8$', '7kg': '8$', '8kg': '7.5$', '9kg': '7.5$', '10kg': '7$' }
-]
+const russiaBelarus = computed(() => [
+  { name: $t('ciss.russia'), '1-3kg': '8$', '4-6kg': '8$', '7kg': '8$', '8kg': '7.5$', '9kg': '7.5$', '10kg': '7$' },
+  { name: $t('ciss.belarus'), '1-3kg': '8$', '4-6kg': '8$', '7kg': '8$', '8kg': '7.5$', '9kg': '7.5$', '10kg': '7$' }
+])
 </script>
 
 <style scoped>

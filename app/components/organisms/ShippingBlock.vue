@@ -3,11 +3,11 @@
     <div class="shipping-block__header">
       <h3 class="shipping-block__title">
         <i class="fas fa-dollar-sign"></i>
-        СТОИМОСТЬ ЗА КГ В СТРАНЫ
+        {{ $t('shipping.title') }}
       </h3>
       <div class="shipping-block__coefficient">
         <i class="fas fa-cube"></i>
-        объемный вес /7000
+        {{ $t('shipping.coef') }}
       </div>
     </div>
     
@@ -15,13 +15,13 @@
       <table class="rate-table">
         <thead>
           <tr>
-            <th>Страны</th>
+            <th>{{ $t('shipping.countries') }}</th>
             <th>2-3kg</th>
             <th>4-6kg</th>
             <th>7kg</th>
             <th>8kg</th>
             <th>9kg</th>
-            <th>10kg</th>
+            <th>10kg+</th>
           </tr>
         </thead>
         <tbody>
@@ -39,22 +39,22 @@
     </div>
     
     <div class="shipping-block__info">
-      <p><i class="fas fa-box"></i> <strong>Максимальный размер первой посылки:</strong> 60×50×60 см</p>
-      <p><i class="fas fa-weight-hanging"></i> <strong>Максимальный вес первой посылки:</strong> 25kg</p>
-      <p><i class="fas fa-star"></i> <strong>Коэффициент 5000</strong> в некоторых странах (выделены звездочкой *)</p>
-      <p><i class="fas fa-clock"></i> <strong>Ориентировочный срок:</strong> 6-20 рабочих дней с момента отправки</p>
-      <p><i class="fas fa-credit-card"></i> <strong>Оплата:</strong> после выставления счета в течение трех дней</p>
-      <p><i class="fas fa-chart-line"></i> <strong>Оптовые заказы:</strong> обсуждаются в личных сообщениях для наиболее выгодной цены за kg</p>
+      <p><i class="fas fa-box"></i> <span v-html="$t('shipping.info1')" /></p>
+      <p><i class="fas fa-weight-hanging"></i> <span v-html="$t('shipping.info2')" /></p>
+      <p><i class="fas fa-star"></i> <span v-html="$t('shipping.info3')" /></p>
+      <p><i class="fas fa-clock"></i> <span v-html="$t('shipping.info4')" /></p>
+      <p><i class="fas fa-credit-card"></i> <span v-html="$t('shipping.info5')" /></p>
+      <p><i class="fas fa-chart-line"></i> <span v-html="$t('shipping.info6')" /></p>
     </div>
     
     <div class="shipping-block__footnote">
       <span>
         <i class="fas fa-chart-line"></i>
-        Объемный вес рассчитывается по коэффициенту до 7000
+        {{ $t('shipping.footnote') }}
       </span>
       <span>
         <i class="fab fa-telegram"></i>
-        Менеджер: @RRL_manager
+        {{ $t('shipping.manager') }}: @RRL_manager
       </span>
     </div>
   </div>
@@ -71,14 +71,14 @@ const tableData = [
   { country: 'U.K', '2-3kg': '19$', '4-6kg': '18$', '7kg': '17$', '8kg': '16.5$', '9kg': '17$', '10kg': '15.5$' },
   { country: 'Ukraine', '2-3kg': '20$', '4-6kg': '20$', '7kg': '20$', '8kg': '20$', '9kg': '20$_', '10kg': '20$_' },
   { country: 'Malta', '2-3kg': '23$', '4-6kg': '20$', '7kg': '19$', '8kg': '17.5$', '9kg': '16$_', '10kg': '15$_' },
-  { country: 'Cyprus', '2-3kg': '19$', '4-6kg': '18$_', '7kg': '17$_', '8kg': '16.5$_', '9kg': '17$_', '10kg': '15.5$_' },
-  { country: 'Moldova', '2-3kg': '25$_', '4-6kg': '25$_', '7kg': '23$_', '8kg': '22$_', '9kg': '21$_', '10kg': '20$_' },
-  { country: 'Israel', '2-3kg': '25$_', '4-6kg': '24$_', '7kg': '23$_', '8kg': '22$_', '9kg': '21$_', '10kg': '20$_' },
-  { country: 'Norway', '2-3kg': '22$_', '4-6kg': '19$_', '7kg': '18$_', '8kg': '17$_', '9kg': '16$_', '10kg': '15$_' },
-  { country: 'Switzerland', '2-3kg': '23$_', '4-6kg': '21$_', '7kg': '19$_', '8kg': '18$_', '9kg': '17$_', '10kg': '16$_' },
-  { country: 'U.S.', '2-3kg': '22$_', '4-6kg': '19$_', '7kg': '18$_', '8kg': '17$_', '9kg': '16$_', '10kg': '15$_' },
-  { country: 'Indonesia', '2-3kg': '25$_', '4-6kg': '23$_', '7kg': '22$_', '8kg': '21$_', '9kg': '21$_', '10kg': '20$_' },
-  { country: 'Thailand', '2-3kg': '25$_', '4-6kg': '23$_', '7kg': '22$_', '8kg': '21$_', '9kg': '21$_', '10kg': '20$_' },
+  { country: 'Cyprus*', '2-3kg': '19$', '4-6kg': '18$_', '7kg': '17$_', '8kg': '16.5$_', '9kg': '17$_', '10kg': '15.5$_' },
+  { country: 'Moldova*', '2-3kg': '25$_', '4-6kg': '25$_', '7kg': '23$_', '8kg': '22$_', '9kg': '21$_', '10kg': '20$_' },
+  { country: 'Israel*', '2-3kg': '25$_', '4-6kg': '24$_', '7kg': '23$_', '8kg': '22$_', '9kg': '21$_', '10kg': '20$_' },
+  { country: 'Norway*', '2-3kg': '22$_', '4-6kg': '19$_', '7kg': '18$_', '8kg': '17$_', '9kg': '16$_', '10kg': '15$_' },
+  { country: 'Switzerland*', '2-3kg': '23$_', '4-6kg': '21$_', '7kg': '19$_', '8kg': '18$_', '9kg': '17$_', '10kg': '16$_' },
+  { country: 'U.S*', '2-3kg': '22$_', '4-6kg': '19$_', '7kg': '18$_', '8kg': '17$_', '9kg': '16$_', '10kg': '15$_' },
+  { country: 'Indonesia*', '2-3kg': '25$_', '4-6kg': '23$_', '7kg': '22$_', '8kg': '21$_', '9kg': '21$_', '10kg': '20$_' },
+  { country: 'Thailand*', '2-3kg': '25$_', '4-6kg': '23$_', '7kg': '22$_', '8kg': '21$_', '9kg': '21$_', '10kg': '20$_' },
   { country: 'Armenia', '2-3kg': '24$_', '4-6kg': '24$_', '7kg': '24$_', '8kg': '24$_', '9kg': '24$_', '10kg': '24$_' }
 ]
 </script>

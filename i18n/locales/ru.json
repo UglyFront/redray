@@ -18,16 +18,48 @@
   "shipping_info_html": "<i class=\"fas fa-box-open\"></i> <strong>MIN CONDITIONS:</strong> первая посылка 60×50×60 см, мин. вес 25kg. Коэффициент 500 в отдельных странах (*)<br><i class=\"fas fa-ship\"></i> <strong>Срок:</strong> 6-20 рабочих дней после отправки. Счет оплатить в течение 3 суток.<br><i class=\"fas fa-fire\"></i> <strong>PERSONAL OFFER:</strong> отправка и цена за кг обсуждаются в ЛС — даём лучшую ставку.",
   "weight_columns": ["2-3kg", "4-6kg", "7kg", "8kg", "9kg", "10kg"],
   "header_links": [
-    { "label": "TELEGRAM", "href": "https://t.me/RedRayLogistics", "icon": "fab fa-telegram" },
-    { "label": "TIKTOK", "href": "https://www.tiktok.com/red_raylogistics", "icon": "fab fa-tiktok" },
-    { "label": "МЕНЕДЖЕР", "href": "https://t.me/RRL_manager", "icon": "fas fa-user-headset" },
-    { "label": "БОТ", "href": "https://t.me/rule_and_blanksbot", "icon": "fas fa-robot" },
-    { "label": "ЗАКАЗ", "href": "https://t.me/RedRayLogistics/259", "icon": "fas fa-question-circle" }
+    {
+      "label": "TELEGRAM",
+      "href": "https://t.me/RedRayLogistics",
+      "icon": "fab fa-telegram"
+    },
+    {
+      "label": "TIKTOK",
+      "href": "https://www.tiktok.com/red_raylogistics",
+      "icon": "fab fa-tiktok"
+    },
+    {
+      "label": "МЕНЕДЖЕР",
+      "href": "https://t.me/RRL_manager",
+      "icon": "fas fa-user-headset"
+    },
+    {
+      "label": "БОТ",
+      "href": "https://t.me/rule_and_blanksbot",
+      "icon": "fas fa-robot"
+    },
+    {
+      "label": "ЗАКАЗ",
+      "href": "https://t.me/RedRayLogistics/259",
+      "icon": "fas fa-question-circle"
+    }
   ],
   "footer_links": [
-    { "label": "channel", "href": "https://t.me/RedRayLogistics", "icon": "fab fa-telegram" },
-    { "label": "manager", "href": "https://t.me/RRL_manager", "icon": "fas fa-user-tie" },
-    { "label": "bot", "href": "https://t.me/rule_and_blanksbot", "icon": "fas fa-bolt" }
+    {
+      "label": "channel",
+      "href": "https://t.me/RedRayLogistics",
+      "icon": "fab fa-telegram"
+    },
+    {
+      "label": "manager",
+      "href": "https://t.me/RRL_manager",
+      "icon": "fas fa-user-tie"
+    },
+    {
+      "label": "bot",
+      "href": "https://t.me/rule_and_blanksbot",
+      "icon": "fas fa-bolt"
+    }
   ],
   "shoe_suppliers": [
     {
@@ -231,9 +263,7 @@
       "storeLink": "https://vetementsshop.x.yupoo.com",
       "storeLabel": "vetementsshop.x.yupoo.com",
       "storeIcon": "fas fa-crown",
-      "tags": [
-        { "name": "Vetements", "strong": "Vetements" }
-      ],
+      "tags": [{ "name": "Vetements", "strong": "Vetements" }],
       "primaryLink": "https://t.me/RRL_manager",
       "primaryText": "Поставщик",
       "primaryIcon": "fab fa-telegram"
@@ -260,9 +290,7 @@
       "storeLink": "https://shop141339468.world.taobao.com",
       "storeLabel": "shop141339468.world.taobao.com",
       "storeIcon": "fas fa-shopping-cart",
-      "tags": [
-        { "name": "Rick Owens", "strong": "Rick Owens" }
-      ],
+      "tags": [{ "name": "Rick Owens", "strong": "Rick Owens" }],
       "primaryLink": "https://t.me/RRL_manager",
       "primaryText": "Поставщик",
       "primaryIcon": "fab fa-telegram"
@@ -274,9 +302,7 @@
       "storeLink": "https://hengyuclub.x.yupoo.com",
       "storeLabel": "hengyuclub.x.yupoo.com",
       "storeIcon": "fas fa-gem",
-      "tags": [
-        { "name": "Amiri", "strong": "Amiri" }
-      ],
+      "tags": [{ "name": "Amiri", "strong": "Amiri" }],
       "primaryLink": "https://t.me/RRL_manager",
       "primaryText": "Поставщик",
       "primaryIcon": "fab fa-telegram"
@@ -303,9 +329,7 @@
       "storeLink": "https://fakelab.x.yupoo.com",
       "storeLabel": "fakelab.x.yupoo.com",
       "storeIcon": "fas fa-flask",
-      "tags": [
-        { "name": "Off White", "strong": "Off White" }
-      ],
+      "tags": [{ "name": "Off White", "strong": "Off White" }],
       "primaryLink": "https://t.me/RRL_manager",
       "primaryText": "Поставщик",
       "primaryIcon": "fab fa-telegram"
@@ -332,9 +356,7 @@
       "storeLink": "https://pikachushop.x.yupoo.com",
       "storeLabel": "pikachushop.x.yupoo.com",
       "storeIcon": "fas fa-bolt",
-      "tags": [
-        { "name": "Eric Emanuel", "strong": "Eric Emanuel" }
-      ],
+      "tags": [{ "name": "Eric Emanuel", "strong": "Eric Emanuel" }],
       "primaryLink": "https://t.me/RRL_manager",
       "primaryText": "Поставщик",
       "primaryIcon": "fab fa-telegram"
@@ -361,9 +383,7 @@
       "storeLink": "https://www.jetlifefashion.com",
       "storeLabel": "jetlifefashion.com",
       "storeIcon": "fas fa-jet-fighter",
-      "tags": [
-        { "name": "0832 Comeback", "strong": "0832 Comeback" }
-      ],
+      "tags": [{ "name": "0832 Comeback", "strong": "0832 Comeback" }],
       "primaryLink": "https://t.me/RRL_manager",
       "primaryText": "Поставщик",
       "primaryIcon": "fab fa-telegram"
@@ -376,5 +396,36 @@
     { "icon": "fas fa-tachometer-alt", "text": "трекинг 24/7" },
     { "icon": "fas fa-dollar-sign", "text": "лучшие цены на кг" },
     { "icon": "fas fa-box", "text": "упаковка 3$ фикс" }
-  ]
+  ],
+  "shipping": {
+    "info1": "<strong>Максимальный размер первой посылки:</strong> 60×50×60 см",
+    "info2": "<strong>Максимальный вес первой посылки:</strong> 25kg",
+    "info3": "<strong>Коэффициент 5000</strong> в некоторых странах (выделены звездочкой *)",
+    "info4": "<strong>Ориентировочный срок:</strong> 6-20 рабочих дней с момента отправки",
+    "info5": "<strong>Оплата:</strong> после выставления счета в течение трех дней",
+    "info6": "<strong>Оптовые заказы:</strong> обсуждаются в личных сообщениях для наиболее выгодной цены за kg",
+    "title": "СТОИМОСТЬ ЗА КГ В СТРАНЫ",
+    "coef": "объемный вес / 7000",
+    "footnote": "Объемный вес рассчитывается по коэффициенту до 7000",
+    "countries": "Страны",
+    "manager": "Менеджер"
+  },
+  "ciss": {
+    "title": "СТОИМОСТЬ ЗА КГ В СТРАНЫ СНГ",
+    "kg": "Цены указаны за 1kg",
+    "russia_belarus": "РОССИЯ / БЕЛАРУСЬ",
+    "country": "Страна",
+    "russia": "Россия (9-16 дней)",
+    "belarus": "Беларусь (9-16 дней)",
+    "russiaExpress": "Россия (2-3 дня)",
+    "russia_delivery_info": "Сначала посылка поступает на склад в Москве, после чего отправляется в разные города через различные транспортные компании. Доступен самовывоз со склада в МСК.",
+    "russia_packaging_info": " Стоимость упаковки фиксирована — <strong>3$</strong>, независимо от веса.",
+    "kz": "Казахстан",
+    "kz_delivery_info": "Сначала посылка прибывает в Алматы, где доступен самовывоз со склада. Из Алматы в другие города доставка осуществляется через КазПочту.",
+    "kz_packaging_info": "Стоимость упаковки фиксирована — <strong>3$</strong>, независимо от веса.",
+    "kirgiz": "Кыргызстан",
+    "kirgiz_delivery_info": "Сначала посылка доставляется на склад в Бишкеке, а затем отправляется местной службой доставки до адреса получателя.",
+    "kirgiz_packaging_info": "Стоимость упаковки фиксирована — <strong>3$</strong>, независимо от веса.",
+    "kirgiz_min": " Минимальный вес отправки — <strong>5kg</strong>"
+  }
 }

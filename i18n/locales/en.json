@@ -18,16 +18,48 @@
   "shipping_info_html": "<i class=\"fas fa-box-open\"></i> <strong>MIN CONDITIONS:</strong> first parcel 60×50×60 cm, min. weight 25kg. Coefficient 500 in some countries (*)<br><i class=\"fas fa-ship\"></i> <strong>Lead time:</strong> 6-20 business days after dispatch. Invoice must be paid within 3 days.<br><i class=\"fas fa-fire\"></i> <strong>PERSONAL OFFER:</strong> shipping and price per kg are discussed in DM — we give you the best rate.",
   "weight_columns": ["2-3kg", "4-6kg", "7kg", "8kg", "9kg", "10kg"],
   "header_links": [
-    { "label": "TELEGRAM", "href": "https://t.me/RedRayLogistics", "icon": "fab fa-telegram" },
-    { "label": "TIKTOK", "href": "https://www.tiktok.com/red_raylogistics", "icon": "fab fa-tiktok" },
-    { "label": "MANAGER", "href": "https://t.me/RRL_manager", "icon": "fas fa-user-headset" },
-    { "label": "BOT", "href": "https://t.me/rule_and_blanksbot", "icon": "fas fa-robot" },
-    { "label": "ORDER", "href": "https://t.me/RedRayLogistics/259", "icon": "fas fa-question-circle" }
+    {
+      "label": "TELEGRAM",
+      "href": "https://t.me/RedRayLogistics",
+      "icon": "fab fa-telegram"
+    },
+    {
+      "label": "TIKTOK",
+      "href": "https://www.tiktok.com/red_raylogistics",
+      "icon": "fab fa-tiktok"
+    },
+    {
+      "label": "MANAGER",
+      "href": "https://t.me/RRL_manager",
+      "icon": "fas fa-user-headset"
+    },
+    {
+      "label": "BOT",
+      "href": "https://t.me/rule_and_blanksbot",
+      "icon": "fas fa-robot"
+    },
+    {
+      "label": "ORDER",
+      "href": "https://t.me/RedRayLogistics/259",
+      "icon": "fas fa-question-circle"
+    }
   ],
   "footer_links": [
-    { "label": "channel", "href": "https://t.me/RedRayLogistics", "icon": "fab fa-telegram" },
-    { "label": "manager", "href": "https://t.me/RRL_manager", "icon": "fas fa-user-tie" },
-    { "label": "bot", "href": "https://t.me/rule_and_blanksbot", "icon": "fas fa-bolt" }
+    {
+      "label": "channel",
+      "href": "https://t.me/RedRayLogistics",
+      "icon": "fab fa-telegram"
+    },
+    {
+      "label": "manager",
+      "href": "https://t.me/RRL_manager",
+      "icon": "fas fa-user-tie"
+    },
+    {
+      "label": "bot",
+      "href": "https://t.me/rule_and_blanksbot",
+      "icon": "fas fa-bolt"
+    }
   ],
   "shoe_suppliers": [
     {
@@ -231,9 +263,7 @@
       "storeLink": "https://vetementsshop.x.yupoo.com",
       "storeLabel": "vetementsshop.x.yupoo.com",
       "storeIcon": "fas fa-crown",
-      "tags": [
-        { "name": "Vetements", "strong": "Vetements" }
-      ],
+      "tags": [{ "name": "Vetements", "strong": "Vetements" }],
       "primaryLink": "https://t.me/RRL_manager",
       "primaryText": "Vendor",
       "primaryIcon": "fab fa-telegram"
@@ -260,9 +290,7 @@
       "storeLink": "https://shop141339468.world.taobao.com",
       "storeLabel": "shop141339468.world.taobao.com",
       "storeIcon": "fas fa-shopping-cart",
-      "tags": [
-        { "name": "Rick Owens", "strong": "Rick Owens" }
-      ],
+      "tags": [{ "name": "Rick Owens", "strong": "Rick Owens" }],
       "primaryLink": "https://t.me/RRL_manager",
       "primaryText": "Vendor",
       "primaryIcon": "fab fa-telegram"
@@ -274,9 +302,7 @@
       "storeLink": "https://hengyuclub.x.yupoo.com",
       "storeLabel": "hengyuclub.x.yupoo.com",
       "storeIcon": "fas fa-gem",
-      "tags": [
-        { "name": "Amiri", "strong": "Amiri" }
-      ],
+      "tags": [{ "name": "Amiri", "strong": "Amiri" }],
       "primaryLink": "https://t.me/RRL_manager",
       "primaryText": "Vendor",
       "primaryIcon": "fab fa-telegram"
@@ -303,9 +329,7 @@
       "storeLink": "https://fakelab.x.yupoo.com",
       "storeLabel": "fakelab.x.yupoo.com",
       "storeIcon": "fas fa-flask",
-      "tags": [
-        { "name": "Off White", "strong": "Off White" }
-      ],
+      "tags": [{ "name": "Off White", "strong": "Off White" }],
       "primaryLink": "https://t.me/RRL_manager",
       "primaryText": "Vendor",
       "primaryIcon": "fab fa-telegram"
@@ -332,9 +356,7 @@
       "storeLink": "https://pikachushop.x.yupoo.com",
       "storeLabel": "pikachushop.x.yupoo.com",
       "storeIcon": "fas fa-bolt",
-      "tags": [
-        { "name": "Eric Emanuel", "strong": "Eric Emanuel" }
-      ],
+      "tags": [{ "name": "Eric Emanuel", "strong": "Eric Emanuel" }],
       "primaryLink": "https://t.me/RRL_manager",
       "primaryText": "Vendor",
       "primaryIcon": "fab fa-telegram"
@@ -361,9 +383,7 @@
       "storeLink": "https://www.jetlifefashion.com",
       "storeLabel": "jetlifefashion.com",
       "storeIcon": "fas fa-jet-fighter",
-      "tags": [
-        { "name": "0832 Comeback", "strong": "0832 Comeback" }
-      ],
+      "tags": [{ "name": "0832 Comeback", "strong": "0832 Comeback" }],
       "primaryLink": "https://t.me/RRL_manager",
       "primaryText": "Vendor",
       "primaryIcon": "fab fa-telegram"
@@ -376,5 +396,36 @@
     { "icon": "fas fa-tachometer-alt", "text": "24/7 tracking" },
     { "icon": "fas fa-dollar-sign", "text": "best prices per kg" },
     { "icon": "fas fa-box", "text": "packaging 3$ fixed" }
-  ]
+  ],
+  "shipping": {
+    "info1": "<strong>Maximum size of the first package:</strong> 60×50×60 cm",
+    "info2": "<strong>Maximum weight of the first package:</strong> 25 kg",
+    "info3": "<strong>Coefficient 5000</strong> in some countries (marked with an asterisk *)",
+    "info4": "<strong>Estimated delivery time:</strong> 6–20 business days from dispatch",
+    "info5": "<strong>Payment:</strong> within three days after invoice issuance",
+    "info6": "<strong>Wholesale orders:</strong> discussed via private messages for the best price per kg",
+    "title": "COST PER KG TO COUNTRIES",
+    "coef": "volumetric weight / 7000",
+    "footnote": "Volumetric weight is calculated using a coefficient up to 7000",
+    "countries": "Countries",
+    "manager": "Manager"
+  },
+  "ciss": {
+    "title": "COST PER KG TO CIS COUNTRIES",
+    "kg": "Prices are listed per 1 kg",
+    "russia_belarus": "RUSSIA / BELARUS",
+    "country": "Country",
+    "russia": "Russia (9–16 days)",
+    "belarus": "Belarus (9–16 days)",
+    "russiaExpress": "Russia (2–3 days)",
+    "russia_delivery_info": "The package first arrives at a warehouse in Moscow, after which it is sent to different cities via various transport companies. Pickup from the warehouse in Moscow is available.",
+    "russia_packaging_info": "Packaging cost is fixed — <strong>$3</strong>, regardless of weight.",
+    "kz": "Kazakhstan",
+    "kz_delivery_info": "The package first arrives in Almaty, where pickup from the warehouse is available. From Almaty to other cities, delivery is carried out via KazPost.",
+    "kz_packaging_info": "Packaging cost is fixed — <strong>$3</strong>, regardless of weight.",
+    "kirgiz": "Kyrgyzstan",
+    "kirgiz_delivery_info": "The package is first delivered to a warehouse in Bishkek, then sent via a local delivery service to the recipient’s address.",
+    "kirgiz_packaging_info": "Packaging cost is fixed — <strong>$3</strong>, regardless of weight.",
+    "kirgiz_min": "Minimum shipment weight — <strong>5 kg</strong>"
+  }
 }
