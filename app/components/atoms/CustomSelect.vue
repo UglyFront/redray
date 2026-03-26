@@ -95,7 +95,6 @@ const selectOption = (option) => {
   searchQuery.value = ''
 }
 
-// Закрытие при клике вне компонента
 const handleClickOutside = (event) => {
   if (selectRef.value && !selectRef.value.contains(event.target)) {
     isOpen.value = false
@@ -103,7 +102,6 @@ const handleClickOutside = (event) => {
   }
 }
 
-// Закрытие при нажатии Escape
 const handleEscape = (event) => {
   if (event.key === 'Escape' && isOpen.value) {
     isOpen.value = false
@@ -257,7 +255,6 @@ onUnmounted(() => {
   font-size: 0.8rem;
 }
 
-/* Анимация */
 .dropdown-fade-enter-active,
 .dropdown-fade-leave-active {
   transition: opacity 0.2s, transform 0.2s;

@@ -292,7 +292,6 @@ const resultText = computed(() => {
   margin-right: 4px;
 }
 
-/* Стили калькулятора */
 .calculator {
   background: rgba(225, 29, 72, 0.03);
   border-radius: var(--border-radius-sm);
@@ -403,7 +402,6 @@ const resultText = computed(() => {
   margin-right: 4px;
 }
 
-/* Информационные блоки */
 .delivery-info-wrapper {
   margin-top: 1rem;
 }

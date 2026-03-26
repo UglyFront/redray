@@ -16,7 +16,6 @@
         </div>
         
         <div class="splash-controls">
-          <!-- Выбор темы -->
           <div class="control-group">
             <div class="control-label">
               <i class="fas fa-palette"></i>
@@ -40,7 +39,6 @@
             </div>
           </div>
           
-          <!-- Выбор языка -->
           <div class="control-group">
             <div class="control-label">
               <i class="fas fa-globe"></i>
