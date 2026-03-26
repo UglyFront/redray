@@ -17,18 +17,15 @@
       :suppliers="$tm('brand_suppliers')"
     />
 
-    <ShippingBlock />
+     <ShippingCalculator />
+     <CISShippingCalculator />
 
-    <CISShippingBlock />
-
-    <!-- <FeaturesSection :features="features" /> -->
   </MainTemplate>
 </template>
 
 <script setup>
 import MainTemplate from "@/components/templates/MainTemplate.vue";
 import SuppliersGrid from "@/components/organisms/SuppliersGrid.vue";
-import ShippingBlock from "@/components/organisms/ShippingBlock.vue";
-import CISShippingBlock from "@/components/organisms/CISShippingBlock.vue";
-// import FeaturesSection from '@/components/organisms/FeaturesSection.vue'
+import ShippingCalculator from "@/components/organisms/ShippingCalculator.vue";
+import CISShippingCalculator from "@/components/organisms/CISShippingCalculator.vue";
 </script>

@@ -4,7 +4,6 @@
       <SectionMarker :icon="icon" />
       <h2 class="section-title">
         {{ title }}
-        <!-- <small v-if="subtitle">{{ subtitle }}</small> -->
       </h2>
     </div>
     
@@ -36,7 +35,7 @@ defineProps({
 
 <style scoped>
 .suppliers-section {
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 .section-header {
@@ -47,7 +46,7 @@ defineProps({
 }
 
 .section-title {
-  font-size: 1.9rem;
+  font-size: 3rem;
   font-weight: 800;
   letter-spacing: -0.5px;
   text-transform: uppercase;

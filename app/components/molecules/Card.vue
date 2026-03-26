@@ -8,17 +8,6 @@
     <div class="card__body">
       <p class="card__description">{{ $rt(description) }}</p>
       
-      <a
-        v-if="$rt(storeLink)"
-        :href="$rt(storeLink)"
-        target="_blank"
-        class="card__store-link"
-        rel="noopener noreferrer"
-      >
-        <i class="fas fa-store"></i>
-        <span>{{ $rt(storeLabel) }}</span>
-      </a>
-      
       <div class="card__tags">
         <Tag v-for="tag in tags" :key="$rt(tag.name)" :strong="$rt(tag.strong)">
           {{ $rt(tag.name) }}

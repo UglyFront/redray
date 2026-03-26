@@ -66,8 +66,6 @@
       "title": "UMKAO",
       "badgeText": "SNEAKER FACTORY",
       "description": "The largest supplier of sneakers and casual footwear. Xyupoo catalog, stable flow, low prices.",
-      "storeLink": "https://umkao.x.yupoo.com",
-      "storeLabel": "umkao.x.yupoo.com",
       "storeIcon": "fas fa-store",
       "tags": [
         { "name": "Nike", "strong": "Nike" },
@@ -84,8 +82,6 @@
       "title": "XIENIAN",
       "badgeText": "SNEAKER MARKET",
       "description": "Popular supplier with a huge assortment. Regular catalog updates.",
-      "storeLink": "https://x.yupoo.com/photos/xienian/albums",
-      "storeLabel": "xienian albums",
       "storeIcon": "fas fa-store",
       "tags": [
         { "name": "Nike", "strong": "Nike" },
@@ -101,8 +97,6 @@
       "title": "WEIDIAN STYLE",
       "badgeText": "DIRECT SALE",
       "description": "Weidian store with a wide range of footwear. Fast order processing.",
-      "storeLink": "https://h5.weidian.com/decorationshop-category/category.html?c=148133437&userid=1624885820&wfbr=BuyercopyURL&share_relation=4c3947d4c0c9c014_18spider_token=fefb",
-      "storeLabel": "weidian.com",
       "storeIcon": "fas fa-link",
       "tags": [
         { "name": "Dunk", "strong": "Dunk" },
@@ -118,8 +112,6 @@
       "title": "WEIDIAN BASE",
       "badgeText": "BUDGET",
       "description": "Affordable prices, a large selection of sneakers for any brand.",
-      "storeLink": "https://weidian.com/?userid=1621765644&spider_token=4985",
-      "storeLabel": "weidian.com/userid=1621765644",
       "storeIcon": "fas fa-link",
       "tags": [
         { "name": "Nike", "strong": "Nike" },
@@ -135,8 +127,6 @@
       "title": "TREND SNEAKERS",
       "badgeText": "PREMIUM",
       "description": "Rare releases, collaborations, exclusives. Weidian premium segment.",
-      "storeLink": "https://shop1697744208.v.weidian.com/?userid=1697744208&spider_token=3818",
-      "storeLabel": "shop1697744208.v.weidian.com",
       "storeIcon": "fas fa-crown",
       "tags": [
         { "name": "LV Trainer", "strong": "LV Trainer" },
@@ -154,8 +144,6 @@
       "title": "GOAT OFFICIAL",
       "badgeText": "TOP BATCH",
       "description": "One of the best aggregators of branded clothing. Top replica quality, xyupoo catalog.",
-      "storeLink": "https://goat-official.x.yupoo.com",
-      "storeLabel": "goat-official.x.yupoo.com",
       "storeIcon": "fas fa-globe",
       "tags": [
         { "name": "Trapstar", "strong": "Trapstar" },
@@ -169,8 +157,6 @@
       "title": "GOAT OFFICIAL 222",
       "badgeText": "STREETWEAR",
       "description": "Specialization in streetwear. Syn, Mt, Bpm brands.",
-      "storeLink": "https://goat-official222.x.yupoo.com",
-      "storeLabel": "goat-official222.x.yupoo.com",
       "storeIcon": "fas fa-globe",
       "tags": [
         { "name": "Syn", "strong": "Syn" },
@@ -185,8 +171,6 @@
       "title": "TOP STONEY STOCK",
       "badgeText": "STONE ISLAND",
       "description": "Exclusive Stone Island supplier. High quality, original tags.",
-      "storeLink": "https://topstoneystock.x.yupoo.com",
-      "storeLabel": "topstoneystock.x.yupoo.com",
       "storeIcon": "fas fa-gem",
       "tags": [
         { "name": "Stone Island", "strong": "Stone Island" },
@@ -200,8 +184,6 @@
       "title": "KONNG GONNG",
       "badgeText": "CP COMPANY",
       "description": "Specialized CP Company supplier. Premium quality.",
-      "storeLink": "https://konng-gonng.x.yupoo.com",
-      "storeLabel": "konng-gonng.x.yupoo.com",
       "storeIcon": "fas fa-tshirt",
       "tags": [
         { "name": "CP Company", "strong": "CP Company" },
@@ -215,8 +197,6 @@
       "title": "DRAGON REP",
       "badgeText": "STREET",
       "description": "Polar, Dime and other streetwear brands. Excellent quality.",
-      "storeLink": "https://dragonrep333.x.yupoo.com",
-      "storeLabel": "dragonrep333.x.yupoo.com",
       "storeIcon": "fas fa-dragon",
       "tags": [
         { "name": "Polar", "strong": "Polar" },
@@ -230,8 +210,6 @@
       "title": "NO GHOST",
       "badgeText": "ICONIC",
       "description": "Nike, Supreme — streetwear classics in the best quality.",
-      "storeLink": "https://noghost.x.yupoo.com",
-      "storeLabel": "noghost.x.yupoo.com",
       "storeIcon": "fas fa-ghost",
       "tags": [
         { "name": "Nike", "strong": "Nike" },
@@ -245,8 +223,6 @@
       "title": "CHAOS MADE",
       "badgeText": "DESIGNER",
       "description": "Gallery Dept, Denim Tears — premium designer clothing.",
-      "storeLink": "https://chaosmade.x.yupoo.com",
-      "storeLabel": "chaosmade.x.yupoo.com",
       "storeIcon": "fas fa-palette",
       "tags": [
         { "name": "Gallery Dept", "strong": "Gallery Dept" },
@@ -260,8 +236,6 @@
       "title": "VETEMENTS SHOP",
       "badgeText": "HIGH FASHION",
       "description": "Exclusive Vetements supplier. Oversize, high fashion.",
-      "storeLink": "https://vetementsshop.x.yupoo.com",
-      "storeLabel": "vetementsshop.x.yupoo.com",
       "storeIcon": "fas fa-crown",
       "tags": [{ "name": "Vetements", "strong": "Vetements" }],
       "primaryLink": "https://t.me/RRL_manager",
@@ -272,8 +246,6 @@
       "title": "BAYMAX CLOTH",
       "badgeText": "TECH WEAR",
       "description": "ACG, FOG — technical clothing and street style.",
-      "storeLink": "https://baymaxcloth.x.yupoo.com",
-      "storeLabel": "baymaxcloth.x.yupoo.com",
       "storeIcon": "fas fa-robot",
       "tags": [
         { "name": "ACG", "strong": "ACG" },
@@ -287,8 +259,6 @@
       "title": "RICK OWENS TAOBAO",
       "badgeText": "DARK AVANT",
       "description": "Official Rick Owens store on Taobao. Authentic quality.",
-      "storeLink": "https://shop141339468.world.taobao.com",
-      "storeLabel": "shop141339468.world.taobao.com",
       "storeIcon": "fas fa-shopping-cart",
       "tags": [{ "name": "Rick Owens", "strong": "Rick Owens" }],
       "primaryLink": "https://t.me/RRL_manager",
@@ -299,8 +269,6 @@
       "title": "HENGYU CLUB",
       "badgeText": "LUXURY",
       "description": "Amiri — premium designer clothing. Jeans, t-shirts, accessories.",
-      "storeLink": "https://hengyuclub.x.yupoo.com",
-      "storeLabel": "hengyuclub.x.yupoo.com",
       "storeIcon": "fas fa-gem",
       "tags": [{ "name": "Amiri", "strong": "Amiri" }],
       "primaryLink": "https://t.me/RRL_manager",
@@ -311,8 +279,6 @@
       "title": "REPS BROTHERS",
       "badgeText": "CASUAL",
       "description": "Palace, Ami Paris — European streetwear and casual fashion.",
-      "storeLink": "https://repsbrothers.x.yupoo.com",
-      "storeLabel": "repsbrothers.x.yupoo.com",
       "storeIcon": "fas fa-users",
       "tags": [
         { "name": "Palace", "strong": "Palace" },
@@ -326,8 +292,6 @@
       "title": "FAKE LAB",
       "badgeText": "OFF WHITE",
       "description": "Exclusive Off-White supplier. The best replicas on the market.",
-      "storeLink": "https://fakelab.x.yupoo.com",
-      "storeLabel": "fakelab.x.yupoo.com",
       "storeIcon": "fas fa-flask",
       "tags": [{ "name": "Off White", "strong": "Off White" }],
       "primaryLink": "https://t.me/RRL_manager",
@@ -338,8 +302,6 @@
       "title": "LANBO 325",
       "badgeText": "FEAR OF GOD",
       "description": "Specialization in Fear of God. Essential, Mainline collections.",
-      "storeLink": "https://lanbo325.x.yupoo.com",
-      "storeLabel": "lanbo325.x.yupoo.com",
       "storeIcon": "fas fa-cloud",
       "tags": [
         { "name": "FOG", "strong": "FOG" },
@@ -353,8 +315,6 @@
       "title": "PIKACHU SHOP",
       "badgeText": "SPORTS",
       "description": "Eric Emanuel — basketball aesthetics, shorts, hoodies.",
-      "storeLink": "https://pikachushop.x.yupoo.com",
-      "storeLabel": "pikachushop.x.yupoo.com",
       "storeIcon": "fas fa-bolt",
       "tags": [{ "name": "Eric Emanuel", "strong": "Eric Emanuel" }],
       "primaryLink": "https://t.me/RRL_manager",
@@ -365,8 +325,6 @@
       "title": "HUNTER 0824",
       "badgeText": "STREET",
       "description": "Supreme, FOG — classics and modern streetwear.",
-      "storeLink": "https://hunter0824.x.yupoo.com",
-      "storeLabel": "hunter0824.x.yupoo.com",
       "storeIcon": "fas fa-crosshairs",
       "tags": [
         { "name": "Supreme", "strong": "Supreme" },
@@ -380,8 +338,6 @@
       "title": "JETLIFE FASHION",
       "badgeText": "0832 COMEBACK",
       "description": "Popular supplier 0832 Comeback. Wide range, affordable prices.",
-      "storeLink": "https://www.jetlifefashion.com",
-      "storeLabel": "jetlifefashion.com",
       "storeIcon": "fas fa-jet-fighter",
       "tags": [{ "name": "0832 Comeback", "strong": "0832 Comeback" }],
       "primaryLink": "https://t.me/RRL_manager",
@@ -397,19 +353,6 @@
     { "icon": "fas fa-dollar-sign", "text": "best prices per kg" },
     { "icon": "fas fa-box", "text": "packaging 3$ fixed" }
   ],
-  "shipping": {
-    "info1": "<strong>Maximum size of the first package:</strong> 60×50×60 cm",
-    "info2": "<strong>Maximum weight of the first package:</strong> 25 kg",
-    "info3": "<strong>Coefficient 5000</strong> in some countries (marked with an asterisk *)",
-    "info4": "<strong>Estimated delivery time:</strong> 6–20 business days from dispatch",
-    "info5": "<strong>Payment:</strong> within three days after invoice issuance",
-    "info6": "<strong>Wholesale orders:</strong> discussed via private messages for the best price per kg",
-    "title": "COST PER KG TO COUNTRIES",
-    "coef": "volumetric weight / 7000",
-    "footnote": "Volumetric weight is calculated using a coefficient up to 7000",
-    "countries": "Countries",
-    "manager": "Manager"
-  },
   "ciss": {
     "title": "COST PER KG TO CIS COUNTRIES",
     "kg": "Prices are listed per 1 kg",
@@ -426,6 +369,41 @@
     "kirgiz": "Kyrgyzstan",
     "kirgiz_delivery_info": "The package is first delivered to a warehouse in Bishkek, then sent via a local delivery service to the recipient’s address.",
     "kirgiz_packaging_info": "Packaging cost is fixed — <strong>$3</strong>, regardless of weight.",
-    "kirgiz_min": "Minimum shipment weight — <strong>5 kg</strong>"
+    "kirgiz_min": "Minimum shipment weight — <strong>5 kg</strong>",
+    "expressDelivery": "Express air delivery (2-3 days)",
+    "minWeightWarning": "Minimum shipping weight: {weight} kg"
+  },
+  "shipping": {
+    "title": "Shipping Calculator",
+    "coef": "Coefficient: 5000* / 7000",
+    "info1": "<strong>Maximum size of the first package:</strong> 60×50×60 cm",
+    "info2": "<strong>Maximum weight of the first package:</strong> 25 kg",
+    "info3": "<strong>Coefficient 5000</strong> in some countries (marked with an asterisk *)",
+    "info4": "<strong>Estimated delivery time:</strong> 6–20 business days from dispatch",
+    "info5": "<strong>Payment:</strong> within three days after invoice issuance",
+    "info6": "<strong>Wholesale orders:</strong> discussed via private messages for the best price per kg",
+    "footnote": "Minimum shipping weight: 2 kg. Volumetric weight is rounded up to 0.5 kg.",
+    "manager": "Manager"
+  },
+  "calculator": {
+    "country": "Country",
+    "modeWeight": "By weight",
+    "modeDimensions": "By dimensions",
+    "weight": "Weight (kg)",
+    "weightPlaceholder": "Enter weight",
+    "length": "Length (cm)",
+    "width": "Width (cm)",
+    "height": "Height (cm)",
+    "placeholderCm": "cm",
+    "calculate": "Calculate",
+    "volumetricWeight": "Weight",
+    "finalWeight": "Final weight",
+    "rate": "Rate",
+    "kg": "kg",
+    "enterData": "Enter data for calculation",
+    "coefficient5000": "Volumetric weight coefficient: 5000"
+  },
+  "select": {
+    "search": "Search"
   }
 }
