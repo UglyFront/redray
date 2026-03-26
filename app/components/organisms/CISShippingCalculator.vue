@@ -70,6 +70,17 @@
         <span v-html="selectedCountryData.packagingInfo" />
       </div>
     </div>
+
+        <div class="calculator__footnote">
+      <span>
+        <i class="fas fa-chart-line"></i>
+        {{ $t('shipping.footnote') }}
+      </span>
+      <span>
+        <i class="fab fa-telegram"></i>
+        {{ $t('shipping.manager') }}: @RRL_manager
+      </span>
+    </div>
   </div>
 </template>
 
@@ -461,6 +472,23 @@ const resultText = computed(() => {
 
 .min-weight-warning strong {
   font-weight: 700;
+}
+
+.calculator__footnote {
+  font-size: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-dim);
+  color: var(--text-muted);
+}
+
+.calculator__footnote i {
+  color: var(--red);
+  margin-right: 4px;
 }
 
 @media (max-width: 768px) {

@@ -382,7 +382,7 @@
     "info4": "<strong>Estimated delivery time:</strong> 6–20 business days from dispatch",
     "info5": "<strong>Payment:</strong> within three days after invoice issuance",
     "info6": "<strong>Wholesale orders:</strong> discussed via private messages for the best price per kg",
-    "footnote": "Minimum shipping weight: 2 kg. Volumetric weight is rounded up to 0.5 kg.",
+    "footnote": "Minimum shipping weight: 2 kg. Weight is rounded up to 0.5 kg.",
     "manager": "Manager"
   },
   "calculator": {
