@@ -1,7 +1,7 @@
 <template>
-  <div class="cis-shipping-block">
-    <div class="cis-shipping-block__header">
-      <h3 class="cis-shipping-block__title">
+  <div class="cis-shipping-calculator">
+    <div class="cis-shipping-calculator__header">
+      <h3 class="cis-shipping-calculator__title">
         <i class="fas fa-ruble-sign"></i>
         {{ $t('ciss.title') }}
       </h3>
@@ -260,7 +260,7 @@ const resultText = computed(() => {
 </script>
 
 <style scoped>
-.cis-shipping-block {
+.cis-shipping-calculator {
   margin: 3rem 0 2rem;
   background: var(--card-bg);
   border-radius: var(--border-radius-md);
@@ -268,7 +268,7 @@ const resultText = computed(() => {
   padding: 1.5rem;
 }
 
-.cis-shipping-block__header {
+.cis-shipping-calculator__header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -278,19 +278,19 @@ const resultText = computed(() => {
   border-bottom: 2px solid var(--red);
 }
 
-.cis-shipping-block__title {
+.cis-shipping-calculator__title {
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: -0.3px;
   color: var(--text-primary);
 }
 
-.cis-shipping-block__title i {
+.cis-shipping-calculator__title i {
   color: var(--red);
   margin-right: 8px;
 }
 
-.cis-shipping-block__note {
+.cis-shipping-calculator__note {
   font-size: 0.75rem;
   color: var(--text-muted);
   background: rgba(225, 29, 72, 0.1);
@@ -298,7 +298,7 @@ const resultText = computed(() => {
   border-radius: var(--border-radius-lg);
 }
 
-.cis-shipping-block__note i {
+.cis-shipping-calculator__note i {
   color: var(--red);
   margin-right: 4px;
 }
@@ -492,11 +492,11 @@ const resultText = computed(() => {
 }
 
 @media (max-width: 768px) {
-  .cis-shipping-block {
+  .cis-shipping-calculator {
     padding: 1rem;
   }
   
-  .cis-shipping-block__title {
+  .cis-shipping-calculator__title {
     font-size: 1.2rem;
   }
   

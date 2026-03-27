@@ -1,11 +1,11 @@
 <template>
-  <div class="shipping-block">
-    <div class="shipping-block__header">
-      <h3 class="shipping-block__title">
+  <div class="shipping-calculator">
+    <div class="shipping-calculator__header">
+      <h3 class="shipping-calculator__title">
         <i class="fas fa-dollar-sign"></i>
         {{ $t('shipping.title') }}
       </h3>
-      <div class="shipping-block__coefficient">
+      <div class="shipping-calculator__coefficient">
         <i class="fas fa-cube"></i>
         {{ $t('shipping.coef') }}
       </div>
@@ -84,7 +84,7 @@
       </div>
     </div>
 
-    <div class="shipping-block__info">
+    <div class="shipping-calculator__info">
       <p><i class="fas fa-box"></i> <span v-html="$t('shipping.info1')" /></p>
       <p><i class="fas fa-weight-hanging"></i> <span v-html="$t('shipping.info2')" /></p>
       <p><i class="fas fa-star"></i> <span v-html="$t('shipping.info3')" /></p>
@@ -93,7 +93,7 @@
       <p><i class="fas fa-chart-line"></i> <span v-html="$t('shipping.info6')" /></p>
     </div>
 
-    <div class="shipping-block__footnote">
+    <div class="shipping-calculator__footnote">
       <span>
         <i class="fas fa-chart-line"></i>
         {{ $t('shipping.footnote') }}
@@ -234,7 +234,7 @@ watch([selectedCountry, mode, weightInput, length, width, height], () => {
 </script>
 
 <style scoped>
-.shipping-block {
+.shipping-calculator {
   margin: 3rem 0 2rem;
   background: var(--card-bg);
   border-radius: var(--border-radius-md);
@@ -242,7 +242,7 @@ watch([selectedCountry, mode, weightInput, length, width, height], () => {
   padding: 1.5rem;
 }
 
-.shipping-block__header {
+.shipping-calculator__header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -252,19 +252,19 @@ watch([selectedCountry, mode, weightInput, length, width, height], () => {
   border-bottom: 2px solid var(--red);
 }
 
-.shipping-block__title {
+.shipping-calculator__title {
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: -0.3px;
   color: var(--text-primary);
 }
 
-.shipping-block__title i {
+.shipping-calculator__title i {
   color: var(--red);
   margin-right: 8px;
 }
 
-.shipping-block__coefficient {
+.shipping-calculator__coefficient {
   font-size: 0.75rem;
   background: rgba(225, 29, 72, 0.1);
   padding: 4px 12px;
@@ -272,7 +272,7 @@ watch([selectedCountry, mode, weightInput, length, width, height], () => {
   color: var(--text-muted);
 }
 
-.shipping-block__coefficient i {
+.shipping-calculator__coefficient i {
   color: var(--red);
   margin-right: 4px;
 }
@@ -397,35 +397,35 @@ watch([selectedCountry, mode, weightInput, length, width, height], () => {
   margin-right: 4px;
 }
 
-.shipping-block__info {
+.shipping-calculator__info {
   background: rgba(225, 29, 72, 0.05);
   border-radius: var(--border-radius-sm);
   padding: 1rem 1.2rem;
   margin: 1rem 0;
 }
 
-.shipping-block__info p {
+.shipping-calculator__info p {
   font-size: 0.75rem;
   color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 0.5rem;
 }
 
-.shipping-block__info p:last-child {
+.shipping-calculator__info p:last-child {
   margin-bottom: 0;
 }
 
-.shipping-block__info i {
+.shipping-calculator__info i {
   color: var(--red);
   width: 20px;
   margin-right: 6px;
 }
 
-.shipping-block__info strong {
+.shipping-calculator__info strong {
   color: var(--text-primary);
 }
 
-.shipping-block__footnote {
+.shipping-calculator__footnote {
   font-size: 0.7rem;
   display: flex;
   flex-wrap: wrap;
@@ -437,26 +437,26 @@ watch([selectedCountry, mode, weightInput, length, width, height], () => {
   color: var(--text-muted);
 }
 
-.shipping-block__footnote i {
+.shipping-calculator__footnote i {
   color: var(--red);
   margin-right: 4px;
 }
 
 @media (max-width: 768px) {
-  .shipping-block {
+  .shipping-calculator {
     padding: 1rem;
   }
   
-  .shipping-block__title {
+  .shipping-calculator__title {
     font-size: 1.2rem;
   }
   
-  .shipping-block__header {
+  .shipping-calculator__header {
     flex-direction: column;
     gap: 0.5rem;
   }
   
-  .shipping-block__footnote {
+  .shipping-calculator__footnote {
     flex-direction: column;
     gap: 0.5rem;
   }

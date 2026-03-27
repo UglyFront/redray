@@ -1,6 +1,9 @@
 {
   "tagline": "",
+  "calc": "Calculator",
+  "table": "Table",
   "theme": "Theme",
+  "more": "Show all",
   "language": "Language",
   "light": "Light",
   "dark": "Dark",
@@ -374,7 +377,7 @@
     "minWeightWarning": "Minimum shipping weight: {weight} kg"
   },
   "shipping": {
-    "title": "SHIPPING CALCULATOR",
+    "title": "SHIPPING COST",
     "coef": "Coefficient: 5000* / 7000",
     "info1": "<strong>Maximum size of the first package:</strong> 60×50×60 cm",
     "info2": "<strong>Maximum weight of the first package:</strong> 25 kg",
@@ -383,7 +386,8 @@
     "info5": "<strong>Payment:</strong> within three days after invoice issuance",
     "info6": "<strong>Wholesale orders:</strong> discussed via private messages for the best price per kg",
     "footnote": "Minimum shipping weight: 2 kg. Weight is rounded up to 0.5 kg.",
-    "manager": "Manager"
+    "manager": "Manager",
+    "countries": "Countries"
   },
   "calculator": {
     "country": "Country",

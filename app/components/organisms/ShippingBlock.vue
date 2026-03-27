@@ -7,7 +7,7 @@
       </h3>
       <div class="shipping-block__coefficient">
         <i class="fas fa-cube"></i>
-        {{ $t('shipping.coef') }}
+        {{ $t('ciss.kg') }}
       </div>
     </div>
     

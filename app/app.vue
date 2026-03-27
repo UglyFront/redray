@@ -12,7 +12,6 @@
 <script setup>
 import SplashScreen from '@/components/organisms/SplashScreen.vue'
 
-
 useHead({
   link: [
     {
