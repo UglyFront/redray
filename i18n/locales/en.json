@@ -354,7 +354,7 @@
     { "icon": "fas fa-box", "text": "packaging 3$ fixed" }
   ],
   "ciss": {
-    "title": "COST PER KG TO CIS COUNTRIES",
+    "title": "COST TO CIS COUNTRIES",
     "kg": "Prices are listed per 1 kg",
     "russia_belarus": "RUSSIA / BELARUS",
     "country": "Country",
@@ -374,7 +374,7 @@
     "minWeightWarning": "Minimum shipping weight: {weight} kg"
   },
   "shipping": {
-    "title": "Shipping Calculator",
+    "title": "SHIPPING CALCULATOR",
     "coef": "Coefficient: 5000* / 7000",
     "info1": "<strong>Maximum size of the first package:</strong> 60×50×60 cm",
     "info2": "<strong>Maximum weight of the first package:</strong> 25 kg",

@@ -194,7 +194,7 @@ const finalWeight = computed(() => {
   let weight = 0
   
   if (mode.value === 'weight') {
-    weight = Math.round(weightInput.value * 2) / 2
+    weight = Math.ceil(weightInput.value * 2) / 2
   } else {
     const volWeight = (length.value * width.value * height.value) / volumeDivider.value
     weight = Math.round(volWeight * 2) / 2

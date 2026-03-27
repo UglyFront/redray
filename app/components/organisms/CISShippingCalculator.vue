@@ -96,7 +96,7 @@ const cisCountries = [
     code: 'russia_standard',
     nameKey: 'ciss.russia',
     isExpress: false,
-    minWeight: 2,
+    minWeight: 1,
     rates: {
       '1-3kg': 8,
       '4-6kg': 8,
@@ -112,7 +112,7 @@ const cisCountries = [
     code: 'belarus',
     nameKey: 'ciss.belarus',
     isExpress: false,
-    minWeight: 2,
+    minWeight: 1,
     rates: {
       '1-3kg': 8,
       '4-6kg': 8,
@@ -128,7 +128,7 @@ const cisCountries = [
     code: 'russia_express',
     nameKey: 'ciss.russiaExpress',
     isExpress: true,
-    minWeight: 2,
+    minWeight: 1,
     rates: {
       '1-3kg': 30,
       '4-6kg': 30,
@@ -144,7 +144,7 @@ const cisCountries = [
     code: 'kazakhstan',
     nameKey: 'ciss.kz',
     isExpress: false,
-    minWeight: 2,
+    minWeight: 1,
     rates: {
       '1-3kg': 7,
       '4-6kg': 7,
@@ -232,9 +232,9 @@ const finalWeight = computed(() => {
   
   let weight = 0
   
-  weight = Math.round(weightInput.value * 2) / 2
+  weight = Math.ceil(weightInput.value * 2) / 2
   
-  const minWeight = selectedCountryData.value.minWeight || 2
+  const minWeight = selectedCountryData.value.minWeight || 1
   
   weight = Math.max(weight, minWeight)
   

@@ -13,7 +13,7 @@
   "watches": "ЧАСЫ",
   "electronics": "ЭЛЕКТРОНИКА",
   "shipping_world": "СТАВКИ ЗА КГ · МИР",
-  "shipping_cis": "СТОИМОСТЬ ЗА КГ В СТРАНЫ СНГ",
+  "shipping_cis": "СТОИМОСТЬ СТРАНЫ СНГ",
   "coefficient": "объемный вес /7000",
   "shipping_info_html": "<i class=\"fas fa-box-open\"></i> <strong>MIN CONDITIONS:</strong> первая посылка 60×50×60 см, мин. вес 25kg. Коэффициент 500 в отдельных странах (*)<br><i class=\"fas fa-ship\"></i> <strong>Срок:</strong> 6-20 рабочих дней после отправки. Счет оплатить в течение 3 суток.<br><i class=\"fas fa-fire\"></i> <strong>PERSONAL OFFER:</strong> отправка и цена за кг обсуждаются в ЛС — даём лучшую ставку.",
   "weight_columns": ["2-3kg", "4-6kg", "7kg", "8kg", "9kg", "10kg"],
@@ -354,7 +354,7 @@
     { "icon": "fas fa-box", "text": "упаковка 3$ фикс" }
   ],
   "ciss": {
-    "title": "СТОИМОСТЬ ЗА КГ В СТРАНЫ СНГ",
+    "title": "СТОИМОСТЬ В СТРАНЫ СНГ",
     "kg": "Цены указаны за 1kg",
     "russia_belarus": "РОССИЯ / БЕЛАРУСЬ",
     "country": "Страна",
@@ -374,7 +374,7 @@
     "minWeightWarning": "Минимальный вес отправки: {weight} кг"
   },
   "shipping": {
-    "title": "Калькулятор доставки",
+    "title": "КАЛЬКУЛЯТОР ДОСТАВКИ",
     "coef": "Коэффициент: 5000* / 7000",
     "info1": "<strong>Максимальный размер первой посылки:</strong> 60×50×60 см",
     "info2": "<strong>Максимальный вес первой посылки:</strong> 25kg",
