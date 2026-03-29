@@ -26,6 +26,10 @@
     <RedLine />
     
     <main class="main-content">
+      <NuxtLink v-if="$route.name !== 'suppliers'" class="back-button" to="/suppliers">
+        <i class="fas fa-arrow-left"></i>
+        {{ $t('back') }}
+      </NuxtLink>
       <slot />
     </main>
     
@@ -102,6 +106,21 @@ const scrollTop = () => {
 
 .logo {
   cursor: pointer;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: max-content;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.back-button:hover {
+  color: var(--red);
 }
 
 .logo h1 {
