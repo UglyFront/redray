@@ -27,14 +27,19 @@
       "icon": "fab fa-telegram"
     },
     {
-      "label": "TIKTOK",
-      "href": "https://www.tiktok.com/red_raylogistics",
-      "icon": "fab fa-tiktok"
+      "label": "INSTAGRAM",
+      "href": "",
+      "icon": "fab fa-instagram"
+    },
+    {
+      "label": "WHATSAPP",
+      "href": "",
+      "icon": "fab fa-whatsapp"
     },
     {
       "label": "МЕНЕДЖЕР",
       "href": "https://t.me/RRL_manager",
-      "icon": "fas fa-user-headset"
+      "icon": "fas fa-user"
     },
     {
       "label": "БОТ",
@@ -372,9 +377,9 @@
     "kirgiz": "Кыргызстан",
     "kirgiz_delivery_info": "Сначала посылка доставляется на склад в Бишкеке, а затем отправляется местной службой доставки до адреса получателя.",
     "kirgiz_packaging_info": "Стоимость упаковки фиксирована — <strong>3$</strong>, независимо от веса.",
-    "kirgiz_min": " Минимальный вес отправки — <strong>5kg</strong>",
+    "min": "Минимальный вес отправки и расчета — <strong>{weight}kg</strong>",
     "expressDelivery": "Экспресс-доставка авиа (2-3 дня)",
-    "minWeightWarning": "Минимальный вес отправки: {weight} кг"
+    "minWeightWarning": "Минимальный расчетный вес: {weight} кг"
   },
   "shipping": {
     "title": "СТОИМОСТЬ ДОСТАВКИ",
@@ -385,7 +390,7 @@
     "info4": "<strong>Ориентировочный срок:</strong> 6-20 рабочих дней с момента отправки",
     "info5": "<strong>Оплата:</strong> после выставления счета в течение трех дней",
     "info6": "<strong>Оптовые заказы:</strong> обсуждаются в личных сообщениях для наиболее выгодной цены за kg",
-    "footnote": "Минимальный вес отправления: 2 кг. Вес округляется до 0.5 кг вверх.",
+    "footnote": "Вес округляется до 0.5 кг вверх.",
     "countries": "Страны",
     "manager": "Менеджер"
   },
@@ -405,7 +410,8 @@
     "rate": "Ставка",
     "kg": "кг",
     "enterData": "Введите данные для расчёта",
-    "coefficient5000": "Коэффициент объёмного веса: 5000"
+    "coefficient5000": "Коэффициент объёмного веса: 5000",
+    "toManager": "За более выгодными условиями обратитесь к менеджеру"
   },
   "select": {
     "search": "Поиск"

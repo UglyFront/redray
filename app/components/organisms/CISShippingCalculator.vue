@@ -38,16 +38,16 @@
         />
       </div>
 
-      <div class="calculator__result">
+      <div v-if="weightInput <= 30" class="calculator__result">
         <div class="calculator__result-value" :class="{ 'calculator__result-value--placeholder': !isValidInput }">
           {{ resultText }}
         </div>
         <div v-if="isValidInput" class="calculator__result-details">
           <div>{{ $t('calculator.finalWeight') }}: {{ finalWeight.toFixed(2) }} {{ $t('calculator.kg') }}</div>
           <div>{{ $t('calculator.rate') }}: {{ rateValue }} $/{{ $t('calculator.kg') }}</div>
-          <div v-if="selectedCountryData?.code === 'kyrgyzstan'" class="calculator__min-weight">
+          <div v-if="weightInput < selectedCountryData.minWeight" class="calculator__min-weight">
             <i class="fas fa-exclamation-triangle"></i>
-            <span v-html="$t('ciss.kirgiz_min')" />
+            <span v-html="$t('ciss.min', {weight: selectedCountryData.minWeight})" />
           </div>
           <div v-if="selectedCountryData?.code === 'russia_express'" class="calculator__express-badge">
             <i class="fas fa-rocket"></i>
@@ -56,6 +56,12 @@
         </div>
         <div v-else class="calculator__result-placeholder">
           {{ $t('calculator.enterData') }}
+        </div>
+      </div>
+
+      <div v-else class="calculator__result">
+        <div class="calculator__result-value" :class="{ 'calculator__result-value--placeholder': !isValidInput }">
+           <a href="https://t.me/RRL_manager" target="_blank">{{ $t('calculator.toManager') }} - @RRL_manager</a>
         </div>
       </div>
     </div>
@@ -144,7 +150,7 @@ const cisCountries = [
     code: 'kazakhstan',
     nameKey: 'ciss.kz',
     isExpress: false,
-    minWeight: 1,
+    minWeight: 2,
     rates: {
       '1-3kg': 7,
       '4-6kg': 7,

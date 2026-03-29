@@ -68,7 +68,7 @@ defineProps({
 }
 
 .card__title {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: -0.3px;
   color: var(--text-primary);

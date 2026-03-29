@@ -64,7 +64,7 @@
         </div>
       </div>
 
-      <div class="calculator__result">
+      <div v-if="finalWeight <= 30" class="calculator__result">
         <div class="calculator__result-value" :class="{ 'calculator__result-value--placeholder': !isValidInput }">
           {{ resultText }}
         </div>
@@ -74,12 +74,22 @@
           </div>
           <div>{{ $t('calculator.finalWeight') }}: {{ finalWeight.toFixed(2) }} {{ $t('calculator.kg') }}</div>
           <div>{{ $t('calculator.rate') }}: {{ rateValue }} $/{{ $t('calculator.kg') }}</div>
+          <div v-if="(weightInput < 2 && mode !== 'dimensions') || (volumetricWeight < 2 && mode === 'dimensions')" class="calculator__min-weight">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span v-html="$t('ciss.min', { weight: 2 })" />
+          </div>
           <div v-if="currentCountry?.hasStar" class="calculator__coefficient-note">
             <i class="fas fa-star"></i> {{ $t('calculator.coefficient5000') }}
           </div>
         </div>
         <div v-else class="calculator__result-placeholder">
           {{ $t('calculator.enterData') }}
+        </div>
+      </div>
+
+      <div v-else class="calculator__result">
+        <div class="calculator__result-value" :class="{ 'calculator__result-value--placeholder': !isValidInput }">
+           <a href="https://t.me/RRL_manager" target="_blank">{{ $t('calculator.toManager') }} - @RRL_manager</a>
         </div>
       </div>
     </div>
@@ -271,6 +281,18 @@ watch([selectedCountry, mode, weightInput, length, width, height], () => {
   border-radius: var(--border-radius-lg);
   color: var(--text-muted);
 }
+
+.calculator__min-weight {
+  margin-top: 0.25rem;
+  color: #ffc107;
+  font-size: 0.7rem;
+}
+
+.calculator__min-weight i,
+.calculator__express-badge i {
+  margin-right: 4px;
+}
+
 
 .shipping-calculator__coefficient i {
   color: var(--red);

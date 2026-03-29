@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <header class="main-header">
-      <div class="logo">
+      <div class="logo" @click="scrollTop()">
         <h1>REDRAY<span>LOGISTICS</span></h1>
       </div>
       <div class="header-right">
@@ -61,6 +61,13 @@ defineProps({
   headerLinks: Array,
   footerLinks: Array
 })
+
+const scrollTop = () => {
+  window.scroll({
+    top: 0,
+    behavior: "smooth"
+  })
+}
 </script>
 
 <style scoped>
@@ -91,6 +98,10 @@ defineProps({
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.logo {
+  cursor: pointer;
 }
 
 .logo h1 {

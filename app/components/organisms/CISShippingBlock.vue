@@ -173,7 +173,7 @@
       </div>
       <div class="min-weight-warning">
         <i class="fas fa-exclamation-triangle"></i>
-        <span v-html="$t('ciss.kirgiz_min')" />
+        <span v-html="$t('ciss.min', { weigth: 5 })" />
       </div>
     </div>
   </div>

@@ -27,14 +27,19 @@
       "icon": "fab fa-telegram"
     },
     {
-      "label": "TIKTOK",
-      "href": "https://www.tiktok.com/red_raylogistics",
-      "icon": "fab fa-tiktok"
+      "label": "INSTAGRAM",
+      "href": "",
+      "icon": "fab fa-instagram"
+    },
+    {
+      "label": "WHATSAPP",
+      "href": "",
+      "icon": "fab fa-whatsapp"
     },
     {
       "label": "MANAGER",
       "href": "https://t.me/RRL_manager",
-      "icon": "fas fa-user-headset"
+      "icon": "fas fa-user"
     },
     {
       "label": "BOT",
@@ -372,7 +377,7 @@
     "kirgiz": "Kyrgyzstan",
     "kirgiz_delivery_info": "The package is first delivered to a warehouse in Bishkek, then sent via a local delivery service to the recipient’s address.",
     "kirgiz_packaging_info": "Packaging cost is fixed — <strong>$3</strong>, regardless of weight.",
-    "kirgiz_min": "Minimum shipment weight — <strong>5 kg</strong>",
+    "min": "Minimum shipment weight — <strong>{weight}kg</strong>",
     "expressDelivery": "Express air delivery (2-3 days)",
     "minWeightWarning": "Minimum shipping weight: {weight} kg"
   },
@@ -385,7 +390,7 @@
     "info4": "<strong>Estimated delivery time:</strong> 6–20 business days from dispatch",
     "info5": "<strong>Payment:</strong> within three days after invoice issuance",
     "info6": "<strong>Wholesale orders:</strong> discussed via private messages for the best price per kg",
-    "footnote": "Minimum shipping weight: 2 kg. Weight is rounded up to 0.5 kg.",
+    "footnote": "Weight is rounded up to 0.5 kg.",
     "manager": "Manager",
     "countries": "Countries"
   },
@@ -405,7 +410,8 @@
     "rate": "Rate",
     "kg": "kg",
     "enterData": "Enter data for calculation",
-    "coefficient5000": "Volumetric weight coefficient: 5000"
+    "coefficient5000": "Volumetric weight coefficient: 5000",
+    "toManager": "For better conditions, please contact the manager"
   },
   "select": {
     "search": "Search"
