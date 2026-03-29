@@ -15,25 +15,25 @@
       />
     </div>
 
-    <button
-      v-if="suppliers.length > 3 && !showAll"
+    <NuxtLink
+      v-if="props.short"
       class="show-all-button"
-      @click="toggleShowAll"
+      :to="`/suppliers/${props.suppliers_key}`"
     >
       {{ $t('more') }}
-    </button>
+    </NuxtLink>
   </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
 import SectionMarker from '@/components/atoms/SectionMarker.vue'
 import Card from '@/components/molecules/Card.vue'
 
 const props = defineProps({
   icon: { type: String, required: true },
   title: { type: String, required: true },
-  subtitle: { type: String, default: '' },
+  short: { type: Boolean, default: false },
+  suppliers_key: { type: String, required: true },
   suppliers: {
     type: Array,
     required: true,
@@ -41,18 +41,12 @@ const props = defineProps({
   }
 })
 
-const showAll = ref(false)
-
 const visibleSuppliers = computed(() => {
-  if (showAll.value) {
+  if (!props.short) {
     return props.suppliers
   }
   return props.suppliers.slice(0, 3)
 })
-
-const toggleShowAll = () => {
-  showAll.value = !showAll.value
-}
 </script>
 
 <style scoped>
@@ -101,6 +95,7 @@ const toggleShowAll = () => {
   cursor: pointer;
   transition: all 0.2s ease;
   color: var(--text-primary);
+  width: max-content;
 }
 
 .show-all-button:hover {

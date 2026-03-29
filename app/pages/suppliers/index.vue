@@ -4,17 +4,19 @@
     :footer-links="$tm('footer_links')"
   >
     <SuppliersGrid
-      icon="fas fa-shoe-prints"
-      :title="$t('shoes')"
-      :subtitle="$t('shoes_subtitle')"
+      :icon="$t('shoe_suppliers_icon')"
+      :title="$t('shoe_suppliers_title')"
       :suppliers="$tm('shoe_suppliers')"
+      suppliers_key="shoe_suppliers"
+      short
     />
 
     <SuppliersGrid
-      icon="fas fa-tshirt"
-      :title="$t('brands')"
-      :subtitle="$t('brands_subtitle')"
+      :icon="$t('brand_suppliers_icon')"
+      :title="$t('brand_suppliers_title')"
       :suppliers="$tm('brand_suppliers')"
+      suppliers_key="brand_suppliers"
+      short
     />
 
     <CalculatorsShipping />
